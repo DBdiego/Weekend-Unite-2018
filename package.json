@@ -1,0 +1,18 @@
+{
+  "name": "invitationsite",
+  "version": "1.0.0",
+  "description": "hp_invitation_scouting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "invitation"
+  ],
+  "author": "DiegoDeBuysscher",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DBdiego/testApp.git"
+  }
+}
