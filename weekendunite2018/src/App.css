@@ -1,28 +1,187 @@
+body{
+  background-color: #1B1B1B;
+}
+
+
 .App {
-  text-align: center;
+  text-align           : center ;
+  -webkit-user-select  : none   ;
+  -webkit-touch-callout: none   ;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height       : 40px        ;
+  width        : 40px        ;
+  padding-right: 15px        ;
+  float        : left        ;
+  filter       : invert(100%);
 }
 
+
+
+/* --------- APP HEADER --------- */
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #2D2D2D             ;
+  height          : 6%                ;
+  width           : 100%                ;
+  padding         : 10px                ;
+  top             : 0px                 ;
+  color           : black               ;
+  float           : center              ;
+  text-align      : center              ;
+  box-shadow      : 0px 0.51px 3px grey ;
+  position        : fixed               ;
+  z-index         : 5                   ;
 }
+
+.App-header ul {
+  list-style-type: none   ;
+  margin         : 0      ;
+  padding        : 0      ;
+  overflow       : hidden ;
+}
+
+.App-header li {
+  float        : left;
+  padding-right: 0.5% ;
+  padding-top  : 0.8% ;
+  padding-left : 0.5% ;
+}
+
+.App-header .department {
+  float: top;
+  color        : #D5D5D5 ;
+  font-size    : 18px    ;
+  padding-right: 12px    ;
+  padding-left : 12px    ; 
+  padding-bottom: 100px
+}
+
+
+
+button{
+  background-color   : #2D2D2D           ;
+  color              : #D5D5D5           ;
+  font-size          : 12px              ;
+  height             : 28px              ;
+  border             : 1px solid #5A5A5A ;
+  font-weight        : bold              ;
+  padding-right      : 12px              ;
+  padding-left       : 12px              ;
+  -webkit-user-select: none              ;
+  user-select        : none              ;
+  font-family: arial ;
+
+}
+
+button:hover{
+  background-color: #5A5A5A           ;
+  border          : 1px solid #5A5A5A ;
+  transition      : 0.3s              ;
+}
+
+button:focus{
+    outline: none ;
+}
+
 
 .App-title {
-  font-size: 1.5em;
-}
+  font-size: 12px ;
+};
 
 .App-intro {
-  font-size: large;
+  font-size: large ;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.Sidebar{
+  position        : absolute ;
+  width           : 3%       ;
+  height          : 100%     ;
+  background-color: #2D2D2D  ;
+  text-align      : left     ;
+  top             : 0%       ;
+  bottom          : 0%       ; 
+  z-index         : 4        ;
 }
+
+
+
+
+
+/* =====================  PLOTS GENERAL  ===================== */
+
+.plotTitle{
+  font-family: 'Verdana' ;
+  text-anchor: start     ;
+  font-weight: 400       ;
+}
+
+.componentBackground{
+  fill: #2D2D2D;
+  opacity: 0.95;
+}
+
+.plotBackground{
+  fill: #373737;
+  opacity: 1;
+}
+
+svg text{
+  fill: #D5D5D5;
+}
+
+/* =====================  PLOTS DASHBOARD  ===================== */
+
+.Home .pageText{
+  position  : absolute ;
+  color     : white    ;
+  top       : 12%      ;  
+  left      : 4%       ; 
+  width     : 33%      ;
+  height    : 42%      ;
+  text-align: right    ;
+  z-index   : 3        ;
+}
+
+
+
+
+
+
+/* =====================  PLOTS RECRUITMENT  ===================== */
+.Games .pageText{
+  position  : absolute ;
+  color     : white    ;
+  top       : 12%      ;  
+  left      : 4%       ; 
+  width     : 33%      ;
+  height    : 42%      ;
+  text-align: right    ;
+  z-index   : 3        ;
+}
+
+
+
+
+/* =====================  PLOTS PLANNING  ===================== */
+.Info .pageText{
+  position  : absolute ;
+  color     : white    ;
+  top       : 12%      ;  
+  left      : 4%       ; 
+  width     : 33%      ;
+  height    : 42%      ;
+  text-align: right    ;
+  z-index   : 3        ;
+}
+
+
+
+
+
+
+
+
+
+
