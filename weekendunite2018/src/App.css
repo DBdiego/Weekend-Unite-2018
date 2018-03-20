@@ -186,21 +186,21 @@ svg text{
 
 .Info .BossWhatDoI rect{
   fill    : #292929 ;
-  opacity : 0.7     ;
+  opacity : 0.5     ;
   rx      : 3px     ;
   ry      : 3px     ; 
 }
 
 .Info .WhereDoIGo rect{
   fill    :#292929  ;
-  opacity : 0.7     ;
+  opacity : 0.5     ;
   rx      : 3px     ;
   ry      : 3px     ;
 }
 
 .Info .WhoDoIContact rect{
   fill    :#7F0909  ;
-  opacity : 0.7     ;
+  opacity : 0.6     ;
   rx      : 3px     ;
   ry      : 3px     ;
 }
@@ -209,7 +209,7 @@ svg text{
 
 .Info .NotToForget svg .background{
   fill    : #292929 ;
-  opacity : 0.7     ;
+  opacity : 0.5     ;
   rx      : 3px     ;
   ry      : 3px     ;
   z-index : -3      ;
@@ -217,7 +217,7 @@ svg text{
 
 .Info .Times svg .background{
   fill    : #292929 ;
-  opacity : 0.7     ;
+  opacity : 0.5     ;
   rx      : 3px     ;
   ry      : 3px     ; 
   z-index : -3      ;
@@ -225,7 +225,7 @@ svg text{
 
 .Info .Contact svg .background{
   fill    : #7F0909 ;
-  opacity : 0.7     ;
+  opacity : 0.6     ;
   rx      : 3px     ;
   ry      : 3px     ;
   z-index : -3      ;

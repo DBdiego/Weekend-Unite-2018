@@ -74,7 +74,7 @@ class Info extends Component {
                             </tspan>
                         </text>
 
-                        <line className='Separator' x1='44%' y1='13%' x2='44%' y2='86%' />
+                        <line className='Separator' x1='44%' y1='15%' x2='44%' y2='80%' />
 
                         <text className='TitleN' x='50%' y='35px'>A Oublier:</text>
 
@@ -95,7 +95,7 @@ class Info extends Component {
                             <tspan x='53%' dy="33px">
                             - Tout autre appareil de type dis:
                             </tspan>
-                            <tspan x='53%' dy="27px">
+                            <tspan x='57%' dy="27px">
                             "éléctronique"
                             </tspan>
 
