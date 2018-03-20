@@ -13,24 +13,13 @@ class Intro extends Component {
     };
 
 
-    componentWillMount() {
-    };
-
-
-    componentDidMount() {
-    };
-
-
-    componentWillUnmount() {
-    };
-
-
 
     render() {
         return (
             <div className='Intro'>
-                <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
-
+                <div className='Background'>
+                    <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+                </div>
                 <p className = 'pageText'> Intro to the world!</p>
 
             </div>

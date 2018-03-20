@@ -13,24 +13,13 @@ class Home extends Component {
     };
 
 
-    componentWillMount() {
-    };
-
-
-    componentDidMount() {
-    };
-
-
-    componentWillUnmount() {
-    };
-
-
 
     render() {
         return (
             <div className='Home'>
-                <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
-
+                <div className='Background'>
+                    <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+                </div>
                 <p className = 'pageText'> Home sweet home bitches!</p>
 
             </div>

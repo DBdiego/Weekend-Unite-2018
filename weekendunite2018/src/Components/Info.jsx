@@ -183,10 +183,10 @@ class Info extends Component {
                             Grand Chef Bala
                             </tspan>
                             <tspan x='15%' dy="17px">
-                            Akela Louvettes
+                            Akéla Louvettes
                             </tspan>
                             <tspan x='15%' dy="17px">
-                            Akela Louveteaux
+                            Akéla Louveteaux
                             </tspan>
                             <tspan x='15%' dy="17px">
                             CT Guide

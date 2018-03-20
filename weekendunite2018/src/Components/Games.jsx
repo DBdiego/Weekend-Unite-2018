@@ -13,23 +13,12 @@ class Games extends Component {
     };
 
 
-    componentWillMount() {
-    };
-
-
-    componentDidMount() {
-    };
-
-
-    componentWillUnmount() {
-    };
-
-
-
     render() {
         return (
             <div className='Games'>
-                <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+                <div className='Background'>
+                    <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+                </div>
                 <p className = 'pageText'> Game the shit out of it!!</p>
             </div>
         );
