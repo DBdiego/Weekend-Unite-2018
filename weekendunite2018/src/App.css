@@ -5,8 +5,6 @@ body{
 
 .App {
   text-align           : center ;
-  -webkit-user-select  : none   ;
-  -webkit-touch-callout: none   ;
 }
 
 .App-logo {
@@ -68,8 +66,8 @@ body{
 }
 
 .AppHeader button:hover{
-  background-color: #5A5A5A           ;
-  transition      : 0.6s              ;
+  background-color: #5A5A5A ;
+  transition      : 0.6s    ;
 }
 
 .AppHeader button:focus{
@@ -123,9 +121,15 @@ svg text{
   fill: #D5D5D5;
 }
 
-img {
-    width:100%;
+
+
+.Background img {
+    position: fixed;
+    left: 0 ;
+    top : 0 ;
+    width: 100%;
     height: auto;
+    z-index: -5;
 }
 
 
@@ -139,7 +143,7 @@ img {
   width     : 33%      ;
   height    : 42%      ;
   text-align: right    ;
-  z-index   : 3        ;
+  z-index   : 0        ;
 }
 
 /* =====================  HOME  ===================== */
@@ -152,7 +156,7 @@ img {
   width     : 33%      ;
   height    : 42%      ;
   text-align: right    ;
-  z-index   : 3        ;
+  z-index   : 0        ;
 }
 
 
@@ -169,27 +173,240 @@ img {
   width     : 33%      ;
   height    : 42%      ;
   text-align: right    ;
-  z-index   : 3        ;
+  z-index   : 0        ;
 }
 
 
 
 
 /* =====================  INFO  ===================== */
-.Info .pageText{
-  position  : absolute ;
-  color     : white    ;
-  top       : 12%      ;  
-  left      : 4%       ; 
-  width     : 33%      ;
-  height    : 42%      ;
-  text-align: right    ;
-  z-index   : 3        ;
+
+
+/* BACKGROUNDS */
+
+.Info .BossWhatDoI rect{
+  fill    : #292929 ;
+  opacity : 0.7     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+}
+
+.Info .WhereDoIGo rect{
+  fill    :#292929  ;
+  opacity : 0.7     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+.Info .WhoDoIContact rect{
+  fill    :#7F0909  ;
+  opacity : 0.7     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+
+
+.Info .NotToForget svg .background{
+  fill    : #292929 ;
+  opacity : 0.7     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+}
+
+.Info .Times svg .background{
+  fill    : #292929 ;
+  opacity : 0.7     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+  z-index : -3      ;
+}
+
+.Info .Contact svg .background{
+  fill    : #7F0909 ;
+  opacity : 0.7     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+  stroke  : #7F0909 ;
 }
 
 
 
 
+
+
+
+
+
+
+/* NOT TO FORGET */
+
+.Info .BossWhatDoI{
+  position:absolute;
+  top     : 20% ;
+  left    : 7%  ;
+  z-index : 0   ;
+}
+
+
+.Info .BossWhatDoI text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 38px;
+  text-anchor : middle;
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+}
+
+
+.Info .NotToForget{
+  position:absolute;
+  top    : 30% ;
+  left   : 7%  ;
+  z-index: 0   ;
+}
+
+
+.Info .NotToForget svg .TitleY{
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  opacity     : 0.8;
+  text-anchor : start;
+}
+
+
+.Info .NotToForget svg .ListingY{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 18px;
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+}
+
+
+.Info .NotToForget svg .Separator{
+  stroke       : #D5D5D5 ;
+  stroke-width : 1; 
+}
+
+
+.Info .NotToForget svg .TitleN{
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  opacity     : 0.8;
+  text-anchor : start;
+}
+
+
+.Info .NotToForget svg .ListingN{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 18px;
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+}
+
+
+/* WHEREABOUTS */
+
+.Info .WhereDoIGo{
+  position:absolute;
+  top   : 20% ;
+  right : 10% ;
+  z-index: 0;
+}
+
+
+.Info .WhereDoIGo text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 38px;
+  text-anchor : middle;
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+}
+
+
+
+
+.Info .Times{
+  position:absolute;
+  top    : 30% ;
+  right  : 10% ;
+  z-index: 0   ;
+}
+
+.Info .Times svg .Title{
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : start;
+}
+
+.Info .Times svg .Address{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  opacity     : 0.9;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 18px;
+  text-anchor : start;
+}
+
+
+
+
+
+
+/* CONTACT INFO */
+
+.Info .WhoDoIContact{
+  position:absolute;
+  top     : 60% ;
+  right   : 10% ;
+  z-index : 0   ;
+}
+
+
+.Info .WhoDoIContact text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 38px;
+  text-anchor : middle;
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+}
+
+
+
+.Info .Contact{
+  position:absolute;
+  top     : 70% ;
+  right   : 10% ;
+  z-index : 0   ;
+}
+
+.Info .Contact svg .Title{
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  opacity     : 0.8;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 14px;
+  text-anchor : start;
+}
+
+.Info .Contact svg .ContactNames{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  opacity     : 0.9;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 12px;
+  text-anchor : start;
+}
+
+.Info .Contact svg .ContactNumbers{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  opacity     : 0.9;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 12px;
+  text-anchor : end;
+}
 
 
 
