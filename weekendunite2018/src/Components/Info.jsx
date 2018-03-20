@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import hogwardsBackground from './hogwardsBackground.jpg' ;
 import '../App.css';
-import snitch from './snitch.png';
 
 
 
