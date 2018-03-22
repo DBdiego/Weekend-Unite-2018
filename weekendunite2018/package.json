@@ -2,7 +2,7 @@
   "name": "weekendunite2018",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://www.ddb-limited.com/weekendunite/2018",
+  "homepage":"http://www.ddb-limited.com/weekendunite",
   "dependencies": {
     "npm": "^5.7.1",
     "react": "^16.2.0",
