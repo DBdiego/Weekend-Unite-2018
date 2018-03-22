@@ -7,24 +7,21 @@ import '../App.css';
 
 
 class Info extends Component {
-    constructor() {
-        super();
-
-        this.state = {tab:'Home'};
-
-    };
-
 
     render() {
+        const teamName = this.props.match.params.team;
+        const userName = this.props.match.params.name;
+
         return (
             <div className='Info'>
                 <header className = 'PersonalPageHeader'>
                     <img src={logo} className = 'App-logo' alt='logo' />
                     <ul>
-                        <li><Link to='/home' ><button type='button'>EQUIPE</button></Link></li>
-                        <li><Link to='/games'><button type='button'>JEUX</button></Link></li>
-                        <li><Link to='/info' ><button type='button'>INFO PRATIQUES</button></Link></li>
+                        <li><Link to={'/home/'  + teamName + '/' + userName} ><button type='button'>EQUIPE</button>        </Link></li>
+                        <li><Link to={'/games/' + teamName + '/' + userName} ><button type='button'>JEUX</button>          </Link></li>
+                        <li><Link to={'/info/'  + teamName + '/' + userName} ><button type='button'>INFO PRATIQUES</button></Link></li>
                     </ul>
+                    <p className='teamName'> {userName}</p>
                 </header>
                 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet"/>
                 <div className='Background'>
@@ -103,7 +100,7 @@ class Info extends Component {
                             - i...
                             </tspan>
                             <tspan x='53%' dy="33px">
-                            - Tout autre appareil de type dis:
+                            - Tout autre appareil de type:
                             </tspan>
                             <tspan x='57%' dy="27px">
                             "éléctronique"

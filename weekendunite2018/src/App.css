@@ -28,7 +28,7 @@ body{
 
 .PersonalPageHeader {
   background-color: black               ;
-  opacity: 0.8;
+  opacity         : 0.95                 ;
   height          : 65px                ;
   width           : 100%                ;
   color           : black               ;
@@ -79,6 +79,9 @@ body{
 }
 
 
+
+
+
 .App-title {
   font-size: 12px ;
 };
@@ -117,19 +120,19 @@ body{
 }
 
 
-
-/* =====================  INTRO  ===================== */
-.Intro .pageText{
+.teamName{
   position  : absolute ;
   color     : white    ;
-  top       : 12%      ;  
-  left      : 4%       ; 
+  top       : 0px      ;  
+  right     : 5%       ; 
   width     : 33%      ;
-  height    : 42%      ;
+  font-size : 20px     ;
   text-align: right    ;
   z-index   : 0        ;
 }
 
+
+/* =====================  INTRO  ===================== */
 
 
 .Intro .react-select__container{
@@ -190,33 +193,42 @@ body{
 
 /* =====================  HOME  ===================== */
 
-.Home .pageText{
+.Home .ProfilePicture{
+  position : absolute ;
+  width    : 200px    ;
+  height   : auto     ;
+  top      : 18%      ;
+  right    : 12%       ;
+  border   : 1px solid #021a40;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8), 0 0 20px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.Home .textTitle{
   position  : absolute ;
   color     : white    ;
-  top       : 12%      ;  
-  left      : 4%       ; 
-  width     : 33%      ;
-  height    : 42%      ;
-  text-align: right    ;
+  top       : 110px     ;  
+  left      : 10%      ; 
+  font-size : 40px     ;
+  text-align: left     ;
   z-index   : 0        ;
 }
 
-
-
+.Home .textExplication{
+  position  : absolute ;
+  color     : white    ;
+  top       : 210px    ;  
+  left      : 10%      ;
+  width     : 50%    ;  
+  font-size : 20px     ;
+  text-align: left    ;
+  z-index   : 0        ;
+}
 
 
 
 /* =====================  GAMES  ===================== */
-.Games .pageText{
-  position  : absolute ;
-  color     : white    ;
-  top       : 12%      ;  
-  left      : 4%       ; 
-  width     : 33%      ;
-  height    : 42%      ;
-  text-align: right    ;
-  z-index   : 0        ;
-}
 
 
 
@@ -298,7 +310,6 @@ body{
   font-size   : 38px;
   text-anchor : middle;
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
 }
 
 
@@ -314,7 +325,6 @@ body{
   fill        : #D5D5D5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
   font-size   : 25px;
-  opacity     : 0.8;
   text-anchor : start;
 }
 
@@ -323,7 +333,6 @@ body{
   font-family : 'Titillium Web', sans-serif;
   font-size   : 18px;
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
 }
 
 
@@ -337,7 +346,6 @@ body{
   fill        : #D5D5D5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
   font-size   : 25px;
-  opacity     : 0.8;
   text-anchor : start;
 }
 
@@ -346,7 +354,6 @@ body{
   font-family : 'Titillium Web', sans-serif;
   font-size   : 18px;
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
 }
 
 
@@ -365,7 +372,6 @@ body{
   font-size   : 38px;
   text-anchor : middle;
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
 }
 
 
@@ -380,7 +386,6 @@ body{
 
 .Info .Times svg .Title{
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
   font-family : 'Titillium Web', sans-serif;
   font-size   : 25px;
   text-anchor : start;
@@ -388,7 +393,6 @@ body{
 
 .Info .Times svg .Address{
   fill        : #F5F5F5;/*#FFC500 ;*/
-  opacity     : 0.9;
   font-family : 'Titillium Web', sans-serif;
   font-size   : 18px;
   text-anchor : start;
@@ -414,7 +418,6 @@ body{
   font-size   : 38px;
   text-anchor : middle;
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
 }
 
 
@@ -428,7 +431,6 @@ body{
 
 .Info .Contact svg .Title{
   fill        : #D5D5D5;/*#FFC500 ;*/
-  opacity     : 0.8;
   font-family : 'Titillium Web', sans-serif;
   font-size   : 14px;
   text-anchor : start;
@@ -436,7 +438,6 @@ body{
 
 .Info .Contact svg .ContactNames{
   fill        : #F5F5F5;/*#FFC500 ;*/
-  opacity     : 0.9;
   font-family : 'Titillium Web', sans-serif;
   font-size   : 12px;
   text-anchor : start;
@@ -444,7 +445,6 @@ body{
 
 .Info .Contact svg .ContactNumbers{
   fill        : #F5F5F5;/*#FFC500 ;*/
-  opacity     : 0.9;
   font-family : 'Titillium Web', sans-serif;
   font-size   : 12px;
   text-anchor : end;

@@ -42,8 +42,11 @@ class Intro extends Component {
     handleChange(selectedOption)  {
         console.log(selectedOption)
         if (selectedOption.constructor !== Array){
+            const team = database.n2t[selectedOption.label];
             this.setState({ selectedOption: selectedOption.label,
-                            redirect:<Redirect to='/home'/>});
+                            redirect: <Redirect to={'/home/'+team+'/'+selectedOption.label}/>
+                        });
+
         }else{
             this.setState({ selectedOption: selectedOption.label,
                             redirect:''});
