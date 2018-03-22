@@ -17,7 +17,7 @@ class App extends Component {
           autoPlay={true} 
           loop={true}
           playStatus={ReactMusicPlayer.status.PLAYING}
-          volume={10}
+          volume={0}
         />
       </div>
 
