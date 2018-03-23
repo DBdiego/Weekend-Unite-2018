@@ -6,18 +6,20 @@ import Home  from './Home.jsx'  ;
 import Games from './Games.jsx' ;
 import Info  from './Info.jsx'  ;
 
-//				<Route path='/home/'  render={() => <Home  routerProps={{socket:'test'}} /> } /> 
-//				<Route path='/home/'  component={Home}/>  
+
 class Routers extends Component{
   render(){
     return(
 		<div>
 			<Switch>
-				<Route path='/intro' render={() => <Intro        routerProps={{socket:'test'}} /> } /> 
+				<Route path='/intro'             component={Intro} /> 
 				<Route path='/home/:team/:name'  component={Home}  /> 
 				<Route path='/games/:team/:name' component={Games} />
 				<Route path='/info/:team/:name'  component={Info}  />   
 				<Redirect from='/' to='/intro' />
+				<Route from='/home/:team/:name'  to='/home/:team/:name'  /> 
+				<Route from='/games/:team/:name' to='/games/:team/:name' />
+				<Route from='/info/:team/:name'  to='/info/:team/:name'  /> 
 			</Switch>
 		</div>
 	  )
