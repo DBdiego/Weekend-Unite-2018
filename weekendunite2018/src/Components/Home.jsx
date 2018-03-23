@@ -9,18 +9,35 @@ import '../App.css';
 class Home extends Component {
 
     render() {
-        const teamName = this.props.match.params.team;
-        const userName = this.props.match.params.name;
+        const teamName = this.props.location.state.team;
+        const userName = this.props.location.state.username;
         const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
+
+        console.log(this.props.location.state)
 
         return (
             <div className='Home'>
                 <header className = 'PersonalPageHeader'>
                     <img src={logo} className = 'App-logo' alt='logo' />
                     <ul>
-                        <li><Link to={'/home/'  + teamName + '/' + userName} ><button type='button'>EQUIPE</button>        </Link></li>
-                        <li><Link to={'/games/' + teamName + '/' + userName} ><button type='button'>JEUX</button>          </Link></li>
-                        <li><Link to={'/info/'  + teamName + '/' + userName} ><button type='button'>INFO PRATIQUES</button></Link></li>
+                        <li>
+                            <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
+                                <button type='button'>EQUIPE</button>        
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
+                                <button type='button'>JEUX</button>        
+                            </Link>
+                        </li>
+
+                        <li>
+                        <Link to={{pathname:'/info', state:{username:userName, team:teamName}}} >
+                                <button type='button'>INFOS PRATIQUE</button>        
+                            </Link>
+                        </li>
+
                     </ul>
                     <p className='teamName'> {userName}</p>
                 </header>
