@@ -13,7 +13,8 @@ class Home extends Component {
         const userName = this.props.location.state.username;
         const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
 
-        if (typeof teamName !== 'undefined' && typeof teamName !== 'undefined' ){
+        if (typeof userName !== 'undefined' && typeof teamName !== 'undefined' ){
+            console.log('info -> still did it... ', [userName, teamName])
             return (
                 <div className='Home'>
                     <header className = 'PersonalPageHeader'>

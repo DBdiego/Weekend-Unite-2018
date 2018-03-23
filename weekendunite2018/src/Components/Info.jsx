@@ -12,8 +12,8 @@ class Info extends Component {
         const teamName = this.props.location.state.team;
         const userName = this.props.location.state.username;
 
-        if (typeof teamName !== 'undefined' && typeof teamName !== 'undefined' ){
-
+        if (typeof userName !== 'undefined' && typeof teamName !== 'undefined' ){
+            console.log('info -> still did it... ', [userName, teamName])
             return (
                 <div className='Info'>
                     <header className = 'PersonalPageHeader'>
