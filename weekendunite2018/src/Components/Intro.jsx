@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {Redirect}             from 'react-router-dom'         ;
-import hogwardsBackground from './hogwardsBackground.jpg' ;
+import {Redirect}           from 'react-router-dom'         ;
+import hogwardsBackground   from './hogwardsBackground.jpg' ;
 import database from '../database.json';
 import '../App.css';
 
@@ -40,7 +40,6 @@ class Intro extends Component {
 
 
     handleChange(selectedOption)  {
-        console.log(selectedOption)
         if (selectedOption.constructor !== Array){
             const team = database.n2t[selectedOption.label];
             this.setState({ selectedOption: selectedOption.label,
@@ -48,7 +47,6 @@ class Intro extends Component {
                                                      state   : {username: selectedOption.label, team:team}
                                                      }}/>
                         });
-
 
 
 
