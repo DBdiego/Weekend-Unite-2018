@@ -9,12 +9,11 @@ import '../App.css';
 class Home extends Component {
 
     render() {
-        const teamName = this.props.location.state.team;
-        const userName = this.props.location.state.username;
-        const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
+        try {
+            const teamName = this.props.location.state.team;
+            const userName = this.props.location.state.username;
+            const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
 
-        if (typeof userName !== 'undefined' && typeof teamName !== 'undefined' ){
-            console.log('info -> still did it... ', [userName, teamName])
             return (
                 <div className='Home'>
                     <header className = 'PersonalPageHeader'>
@@ -61,9 +60,11 @@ class Home extends Component {
                     </div>
                 </div>
             );
-        }else{
-            return (<Redirect to={'/intro'} />);
         }
+        catch (e) {
+            return (<Redirect to={'/intro'} />);
+        };
+
     };
 };
 

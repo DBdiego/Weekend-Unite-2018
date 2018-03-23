@@ -9,11 +9,11 @@ import '../App.css';
 class Games extends Component {
 
     render() {
-        const teamName = this.props.location.state.team;
-        const userName = this.props.location.state.username;
+        try{
 
-        if (typeof userName !== 'undefined' && typeof teamName !== 'undefined' ){
-            console.log('info -> still did it... ', [userName, teamName])
+            const teamName = this.props.location.state.team;
+            const userName = this.props.location.state.username;
+
             return (
                 <div className='Games'>
                     <header className = 'PersonalPageHeader'>
@@ -45,10 +45,9 @@ class Games extends Component {
                 </div>
             );
 
-        }else{
+        }catch (e) {
             return (<Redirect to={'/intro'} />);
-        }
-        
+        };
 
     };
 };
