@@ -4,18 +4,44 @@ import hogwardsBackground   from './hogwardsBackground.jpg' ;
 import logo                 from '../logo.svg'              ;
 import '../App.css';
 
+/*
 
+                            <li>
+                                <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
+                                    <button type='button'>JEUX</button>        
+                                </Link>
+                            </li>
+
+*/
 
 class Info extends Component {
+    constructor() {
+        super();
+        this.state = {screensize:[window.innerWidth, window.innerHeight]};
+
+    };
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions.bind(this));
+    };
+
+
+    //Update screen dimensions
+    updateDimensions() {
+        console.log('updates screen')
+        this.setState({screensize : [window.innerWidth, window.innerHeight]});
+    };
 
     render() {
-
+        let componentsToRender;
         try{
 
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
+            const listingSpace  = 8; //%
+            const contactsSapce = 12;//%
 
-            return (
+            componentsToRender =  (
                 <div className='Info'>
                     <header className = 'PersonalPageHeader'>
                         <img src={logo} className = 'App-logo' alt='logo' />
@@ -23,12 +49,6 @@ class Info extends Component {
                             <li>
                                 <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
-                                    <button type='button'>JEUX</button>        
                                 </Link>
                             </li>
 
@@ -46,7 +66,8 @@ class Info extends Component {
                     </div>
 
                     <div className='BossWhatDoI'>
-                        <svg width='680px'  height='60px'>
+                        <svg width={ Math.round(0.47 * this.state.screensize[0])+'px'}
+                             height={Math.round(0.08 * this.state.screensize[1])+'px'}>
                             <rect className='background' 
                                   width='100%' 
                                   height='100%' 
@@ -59,7 +80,8 @@ class Info extends Component {
                     </div>
 
                     <div className='NotToForget'>
-                        <svg width='680px'  height='450px'>
+                        <svg width={ Math.round(0.47 * this.state.screensize[0])+'px'}  
+                             height={Math.round(0.65 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 
@@ -74,26 +96,26 @@ class Info extends Component {
                                 <tspan x='10%' y="75px">
                                 1. Sac de couchage
                                 </tspan>
-                                <tspan x='10%' dy="33px">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 2. Matelas
                                 </tspan>
-                                <tspan x='10%' dy="6%">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 3. Trousse de toillette
                                 </tspan>
-                                <tspan x='10%' dy="33px">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 4. Uniforme Impecable
                                 </tspan>
-                                <tspan x='10%' dy="33px">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 5. Gamelle
                                 </tspan>
-                                <tspan x='10%' dy="33px">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 6. Couverts
                                 </tspan>
-                                <tspan x='10%' dy="33px">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 7. Ta bonne humeur
                                 </tspan>
 
-                                <tspan x='10%' dy="33px">
+                                <tspan x='10%' dy={listingSpace + '%'}>
                                 8. ...
                                 </tspan>
                             </text>
@@ -107,19 +129,19 @@ class Info extends Component {
                                 <tspan x='53%' y="75px">
                                 - iPad
                                 </tspan>
-                                <tspan x='53%' dy="33px">
+                                <tspan x='53%' dy={listingSpace + '%'}>
                                 - iPhone
                                 </tspan>
-                                <tspan x='53%' dy="33px">
+                                <tspan x='53%' dy={listingSpace + '%'}>
                                 - iMac
                                 </tspan>
-                                <tspan x='53%' dy="33px">
+                                <tspan x='53%' dy={listingSpace + '%'}>
                                 - i...
                                 </tspan>
-                                <tspan x='53%' dy="33px">
+                                <tspan x='53%' dy={listingSpace + '%'}>
                                 - Tout autre appareil de type:
                                 </tspan>
-                                <tspan x='57%' dy="27px">
+                                <tspan x='57%' dy={listingSpace-0.5 + '%'}>
                                 "éléctronique"
                                 </tspan>
 
@@ -130,7 +152,8 @@ class Info extends Component {
 
 
                     <div className='WhereDoIGo'>
-                        <svg width='450px'  height='60px'>
+                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'} 
+                             height={Math.round(0.08 * this.state.screensize[1])+'px'}>
                             <rect className='background' 
                                   width='100%' 
                                   height='100%' 
@@ -143,7 +166,8 @@ class Info extends Component {
                     </div>
 
                     <div className='Times'>
-                        <svg width='450px'  height='150px'>
+                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'}  
+                             height={Math.round(0.19 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 
@@ -156,10 +180,10 @@ class Info extends Component {
                             <text className='Address'>
 
                                 <tspan x='23%' y="75px">
-                                Street Nr. ,
+                                Rue de Nérette 2, 
                                 </tspan>
                                 <tspan x='23%' dy="25px">
-                                Zipcode City
+                                6900 Marche-en-Famenne
                                 </tspan>
 
                             </text>
@@ -170,7 +194,8 @@ class Info extends Component {
 
 
                     <div className='WhoDoIContact'>
-                        <svg width='450px'  height='60px'>
+                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'} 
+                             height={Math.round(0.08 * this.state.screensize[1])+'px'}>
                             <rect className='background' 
                                   width='100%' 
                                   height='100%' 
@@ -183,7 +208,8 @@ class Info extends Component {
                     </div>
 
                     <div className='Contact'>
-                        <svg width='450px'  height='150px'>
+                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'}  
+                             height={Math.round(0.25 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 
@@ -203,19 +229,19 @@ class Info extends Component {
                             
                             <text className='ContactNames'>
 
-                                <tspan x='15%' y="60px">
+                                <tspan x='15%' y='70px'>
                                 Grand Chef Bala
                                 </tspan>
-                                <tspan x='15%' dy="17px">
+                                <tspan x='15%' dy={contactsSapce + '%'}>
                                 Akéla Louvettes
                                 </tspan>
-                                <tspan x='15%' dy="17px">
+                                <tspan x='15%' dy={contactsSapce + '%'}>
                                 Akéla Louveteaux
                                 </tspan>
-                                <tspan x='15%' dy="17px">
+                                <tspan x='15%' dy={contactsSapce + '%'}>
                                 CT Guide
                                 </tspan>
-                                <tspan x='15%' dy="17px">
+                                <tspan x='15%' dy={contactsSapce + '%'}>
                                 CT Scout
                                 </tspan>
                             </text>
@@ -223,19 +249,19 @@ class Info extends Component {
 
                             <text className='ContactNumbers'>
 
-                                <tspan x='95%' y="60px">
+                                <tspan x='80%' y='70px'>
                                 0 497/44.60.72
                                 </tspan>
-                                <tspan x='95%' dy="17px">
+                                <tspan x='80%' dy={contactsSapce + '%'}>
                                 0 497/44.60.72
                                 </tspan>
-                                <tspan x='95%' dy="17px">
+                                <tspan x='80%' dy={contactsSapce + '%'}>
                                 0 497/44.60.72
                                 </tspan>
-                                <tspan x='95%' dy="17px">
+                                <tspan x='80%' dy={contactsSapce + '%'}>
                                 0 497/44.60.72
                                 </tspan>
-                                <tspan x='95%' dy="17px">
+                                <tspan x='80%' dy={contactsSapce + '%'}>
                                 0 497/44.60.72
                                 </tspan>
                             </text>
@@ -246,8 +272,9 @@ class Info extends Component {
                 </div>
             );
         }catch (e) {
-            return (<Redirect to={'/intro'} />);
+            componentsToRender =  (<Redirect to={'/intro'} />);
         };
+        return componentsToRender;
     };
 };
 

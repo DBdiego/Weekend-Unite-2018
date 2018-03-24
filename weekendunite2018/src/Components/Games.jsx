@@ -9,12 +9,14 @@ import '../App.css';
 class Games extends Component {
 
     render() {
+        let componentsToRender;
+
         try{
 
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
 
-            return (
+            componentsToRender = (
                 <div className='Games'>
                     <header className = 'PersonalPageHeader'>
                         <img src={logo} className = 'App-logo' alt='logo' />
@@ -46,8 +48,10 @@ class Games extends Component {
             );
 
         }catch (e) {
-            return (<Redirect to={'/intro'} />);
+            componentsToRender = (<Redirect to={'/intro'} />);
         };
+        
+        return componentsToRender;
 
     };
 };

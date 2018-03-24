@@ -361,9 +361,9 @@ body{
 
 .Info .WhereDoIGo{
   position:absolute;
-  top   : 20% ;
-  right : 10% ;
-  z-index: 0;
+  top    : 20% ;
+  left   : 57% ;
+  z-index: 0   ;
 }
 
 
@@ -380,7 +380,7 @@ body{
 .Info .Times{
   position:absolute;
   top    : 30% ;
-  right  : 10% ;
+  left   : 57% ;
   z-index: 0   ;
 }
 
@@ -408,7 +408,7 @@ body{
 .Info .WhoDoIContact{
   position:absolute;
   top     : 60% ;
-  right   : 10% ;
+  left    : 57% ;
   z-index : 0   ;
 }
 
@@ -425,7 +425,7 @@ body{
 .Info .Contact{
   position:absolute;
   top     : 70% ;
-  right   : 10% ;
+  left    : 57% ;
   z-index : 0   ;
 }
 

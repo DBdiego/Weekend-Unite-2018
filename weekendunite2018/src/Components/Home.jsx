@@ -5,16 +5,25 @@ import logo                 from '../logo.svg'              ;
 import '../App.css';
 
 
+/*
 
+                            <li>
+                                <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
+                                    <button type='button'>JEUX</button>        
+                                </Link>
+                            </li>
+
+*/
 class Home extends Component {
 
     render() {
+        let componentsToRender;
         try {
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
             const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
 
-            return (
+            componentsToRender = (
                 <div className='Home'>
                     <header className = 'PersonalPageHeader'>
                         <img src={logo} className = 'App-logo' alt='logo' />
@@ -22,12 +31,6 @@ class Home extends Component {
                             <li>
                                 <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
-                                    <button type='button'>JEUX</button>        
                                 </Link>
                             </li>
 
@@ -49,9 +52,9 @@ class Home extends Component {
 
                         <p className='textTitle'> {teamName}</p>
                         <p className='textExplication'> 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                            .... Bref Un text explicatif de la team ... 
                             bla bla bla bla bla bla bla bla bla bla bla bla 
                             bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
                             bla bla bla bla bla bla 
@@ -62,8 +65,9 @@ class Home extends Component {
             );
         }
         catch (e) {
-            return (<Redirect to={'/intro'} />);
+            componentsToRender =  (<Redirect to={'/intro'} />);
         };
+        return componentsToRender
 
     };
 };
