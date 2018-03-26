@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Redirect}           from 'react-router-dom'         ;
 import hogwardsBackground   from './hogwardsBackground.jpg' ;
+import HPLogo   from './HPLogo.png' ;
 import database from '../database.json';
 import '../App.css';
 
@@ -34,8 +35,19 @@ class Intro extends Component {
         names.forEach((name) => {
             options.push({value:name, label:name})
         });
-        options.sort((a, b) => b.label - a.label);
-        return options
+
+        function SplitName(complete, component = 'last'){
+            let toReturn = ''
+            if (component === 'first'){
+                toReturn = complete.split(' ')[0];
+            }else{
+                toReturn = (complete.split(' ').slice(1)).join(' ');
+            }
+            return toReturn
+        }
+        const sortedOptions = options.sort((a, b) => {return (SplitName(a.label)).localeCompare( (SplitName(b.label)))} );
+
+        return sortedOptions
     };
 
 
@@ -61,6 +73,13 @@ class Intro extends Component {
     render() {
         return (
             <div className='Intro'>
+
+                <div className='Background'>
+                    <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+                </div>
+
+                <p className='ConvocTitle'>Convocation Weekend Unité 2018</p>
+
                 <div className='NameInput'>
                     <Select 
                         id='state-select'
@@ -68,14 +87,16 @@ class Intro extends Component {
                         value={this.selectedOption}
                         onChange={this.handleChange}
                         options={this.state.options}
-                        placeholder='Nom'
+                        placeholder='Quel est votre nom?'
                         searchable={true}
                     />
                 </div>
 
-                <div className='Background'>
-                    <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+
+                <div className='HPLogo'>
+                    <img src={HPLogo} alt='' />
                 </div>
+
 
                 {this.state.redirect}
 

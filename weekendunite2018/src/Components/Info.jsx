@@ -161,13 +161,13 @@ class Info extends Component {
                                   y='0'
                             />  
 
-                            <text x='50%' y='45px'> Où est Poudlar?</text>
+                            <text x='50%' y='45px'> Où est Poudlard?</text>
                         </svg>
                     </div>
 
                     <div className='Times'>
                         <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'}  
-                             height={Math.round(0.19 * this.state.screensize[1])+'px'}>
+                             height={Math.round(0.27 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 
@@ -176,17 +176,27 @@ class Info extends Component {
                                   y='0'
                             />  
 
-                            <text className='Title' x='10%' y='35px'>Addresse de la rentrée</text>
+                            <text className='Title' x='8%' y='22%'>Addresse de la rentrée</text>
+                            
                             <text className='Address'>
-
-                                <tspan x='23%' y="75px">
+                                <tspan x='15%' y='36%'>
                                 Rue de Nérette 2, 
                                 </tspan>
-                                <tspan x='23%' dy="25px">
+                                <tspan x='15%' dy='15%'>
                                 6900 Marche-en-Famenne
                                 </tspan>
-
                             </text>
+
+
+
+                            <text className='ArrivalTitle' x='25%' y='75%'>Arrivée </text>
+                            <text className='ArrivalTime'  x='25%' y='90%'>Vendredi 20/04 à 12:30 </text>
+
+                            <line className='Separator' x1='50%' y1='80%' x2='50%' y2='95%' />
+
+                            <text className='DepartureTitle' x='75%' y='75%'>Départ</text>
+                            <text className='DepartureTime'  x='75%' y='90%'>Dimanche 22/04 à 12:30 </text>
+
 
                         </svg>
                     </div>
@@ -253,16 +263,16 @@ class Info extends Component {
                                 0 497/44.60.72
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
-                                0 497/44.60.72
+                                0 486 73 81 22
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
-                                0 497/44.60.72
+                                0 479 22 37 72
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
-                                0 497/44.60.72
+                                0 478 05 88 37
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
-                                0 497/44.60.72
+                                0 491 59 33 64
                                 </tspan>
                             </text>
 

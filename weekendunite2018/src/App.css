@@ -126,9 +126,10 @@ body{
   top       : 0px      ;  
   right     : 5%       ; 
   width     : 33%      ;
-  font-size : 20px     ;
+  font-size : 24px     ;
   text-align: right    ;
   z-index   : 0        ;
+  font-family: 'Great Vibes', cursive;
 }
 
 
@@ -137,7 +138,7 @@ body{
 
 .Intro .react-select__container{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left:30%;
   width:40%;
 }
@@ -156,17 +157,19 @@ body{
   border-color:#F0F0F0;
   border-radius:1px;
   border-width:1px;
+  max-height: 400%;
 }
 
 .Intro .react-select__menu-list{
   color:white;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .Intro .react-select__menu-list .react-select__option--isFocused{
   background: rgba(80,80,80,0.7); 
   color:white;
 }
-
 
 
 
@@ -180,16 +183,30 @@ body{
 
 
 
-.NameInput button:hover{
-  background-color: red ;
-  transition      : 0.6s    ;
+
+
+.Intro .ConvocTitle{
+  position  : absolute ;
+  color     : white    ;
+  top       : 0%       ;  
+  left      : 0%       ;
+  width     :100%      ; 
+  text-align: center   ;
+  font-size : 74px     ;
+  text-anchor: start   ;
+  font-family: 'Great Vibes', cursive;
 }
 
-.NameInput button:focus{
-    outline: none ;
+
+.Intro .HPLogo img{
+    position  : fixed  ;
+    top       : 28%    ;
+    left      : 40%    ;
+    width     : 20%    ;
+    height    : auto   ;
+    min-width : 100px  ;
+    opacity   : 0.85   ;
 }
-
-
 
 /* =====================  HOME  ===================== */
 
@@ -309,7 +326,7 @@ body{
   font-family : 'Titillium Web', sans-serif;
   font-size   : 38px;
   text-anchor : middle;
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
 }
 
 
@@ -322,7 +339,7 @@ body{
 
 
 .Info .NotToForget svg .TitleY{
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
   font-size   : 25px;
   text-anchor : start;
@@ -332,18 +349,18 @@ body{
 .Info .NotToForget svg .ListingY{
   font-family : 'Titillium Web', sans-serif;
   font-size   : 18px;
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
 }
 
 
 .Info .NotToForget svg .Separator{
-  stroke       : #D5D5D5 ;
+  stroke       : #F5F5F5 ;
   stroke-width : 1; 
 }
 
 
 .Info .NotToForget svg .TitleN{
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
   font-size   : 25px;
   text-anchor : start;
@@ -353,7 +370,7 @@ body{
 .Info .NotToForget svg .ListingN{
   font-family : 'Titillium Web', sans-serif;
   font-size   : 18px;
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
 }
 
 
@@ -371,7 +388,7 @@ body{
   font-family : 'Titillium Web', sans-serif;
   font-size   : 38px;
   text-anchor : middle;
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
 }
 
 
@@ -385,7 +402,7 @@ body{
 }
 
 .Info .Times svg .Title{
-  fill        : #D5D5D5;/*#FFC500 ;*/
+  fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
   font-size   : 25px;
   text-anchor : start;
@@ -399,7 +416,38 @@ body{
 }
 
 
+.Info .Times svg .ArrivalTitle{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : middle;
+}
 
+.Info .Times svg .ArrivalTime{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 16px;
+  text-anchor : middle;
+}
+
+.Info .Times svg .Separator{
+  stroke       : white ;
+  stroke-width : 2; 
+}
+
+.Info .Times svg .DepartureTitle{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : middle;
+}
+
+.Info .Times svg .DepartureTime{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 16px;
+  text-anchor : middle;
+}
 
 
 

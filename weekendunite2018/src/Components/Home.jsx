@@ -1,5 +1,6 @@
 import React, { Component } from 'react'                    ;
 import {Link, Redirect}     from 'react-router-dom'         ;
+import teamTexts            from '../teamText.json'         ;
 import hogwardsBackground   from './hogwardsBackground.jpg' ;
 import logo                 from '../logo.svg'              ;
 import '../App.css';
@@ -22,6 +23,7 @@ class Home extends Component {
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
             const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
+            const teamText = teamTexts[teamName];
 
             componentsToRender = (
                 <div className='Home'>
@@ -51,15 +53,7 @@ class Home extends Component {
                         <img src={path2pic} className = 'ProfilePicture' alt='' />
 
                         <p className='textTitle'> {teamName}</p>
-                        <p className='textExplication'> 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            .... Bref Un text explicatif de la team ... 
-                            bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                            bla bla bla bla bla bla 
-                            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        </p>
+                        <p className='textExplication'> {teamText}</p>
                     </div>
                 </div>
             );
