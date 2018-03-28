@@ -25,6 +25,9 @@ class Home extends Component {
             const path2pic = '/Harry Potter Characters/'+teamName+'.jpg';
             const teamText = teamTexts[teamName];
 
+            console.log([teamName])
+            console.log([path2pic])
+
             componentsToRender = (
                 <div className='Home'>
                     <header className = 'PersonalPageHeader'>
