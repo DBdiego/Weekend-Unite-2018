@@ -28,8 +28,10 @@ class Home extends Component {
             componentsToRender = (
                 <div className='Home'>
                     <header className = 'PersonalPageHeader'>
-                        <img src={logo} className = 'App-logo' alt='logo' />
                         <ul>
+                            <li>
+                                <img src={logo} className = 'App-logo' alt='logo' />
+                            </li>
                             <li>
                                 <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
