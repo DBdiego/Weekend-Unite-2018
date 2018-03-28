@@ -38,7 +38,7 @@ class Info extends Component {
 
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
-            const listingSpace  = 8; //%
+            const listingSpace  = 8 ; //%
             const contactsSapce = 12;//%
 
             componentsToRender =  (
@@ -260,7 +260,7 @@ class Info extends Component {
                             <text className='ContactNumbers'>
 
                                 <tspan x='80%' y='70px'>
-                                0 497/44.60.72
+                                0 491 51 29 95
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
                                 0 486 73 81 22
