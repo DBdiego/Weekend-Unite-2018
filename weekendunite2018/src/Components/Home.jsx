@@ -17,6 +17,13 @@ import '../App.css';
 */
 class Home extends Component {
 
+    constructor() {
+        super();
+        //import image from './Harry Potter Characters/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg'
+        //this.state = {image:image};
+
+    };
+
     render() {
         let componentsToRender;
         try {
