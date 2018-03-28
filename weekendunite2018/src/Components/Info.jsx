@@ -6,18 +6,24 @@ import '../App.css';
 
 /*
 
-                            <li>
-                                <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
-                                    <button type='button'>JEUX</button>        
-                                </Link>
-                            </li>
+    <li>
+        <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
+            <button type='button'>JEUX</button>        
+        </Link>
+    </li>
 
 */
 
 class Info extends Component {
     constructor() {
         super();
-        this.state = {screensize:[window.innerWidth, window.innerHeight]};
+        this.state = {screensize:[window.innerWidth, window.innerHeight],
+                      deviceType:'',
+                      svgsizes:{notToForget:[0.47, ],
+                                whereAbouts:[0.33, ],
+                                contacts   :[0.33, ]
+                            }
+                      }; //'' = computer and 'mobile' = phone, tablet (e.g smaller screens)
 
     };
 
@@ -29,7 +35,23 @@ class Info extends Component {
     //Update screen dimensions
     updateDimensions() {
         console.log('updates screen')
-        this.setState({screensize : [window.innerWidth, window.innerHeight]});
+        const newWidth  = window.innerWidth  ;
+        const newHeight = window.innerHeight ;
+        let deviceType = '';
+        let svgsizes   = {notToForget:[0.47, ],
+                          whereAbouts:[0.33, ],
+                          contacts   :[0.33, ]}
+
+        if (newWidth < 700){
+            deviceType = 'Mobile'
+            svgsizes   = {notToForget:[0.9, ],
+                          whereAbouts:[0.9, ],
+                          contacts   :[0.9, ]}
+        }
+        this.setState({screensize : [newWidth, newHeight],
+                       deviceType : deviceType,
+                       svgsizes   : svgsizes
+                    });
     };
 
     render() {
@@ -42,8 +64,8 @@ class Info extends Component {
             const contactsSapce = 12;//%
 
             componentsToRender =  (
-                <div className='Info'>
-                    <header className = 'PersonalPageHeader'>
+                <div className={'Info'+this.state.deviceType}>
+                    <header className={'PersonalPageHeader'+this.state.deviceType}>
                         <img src={logo} className = 'App-logo' alt='logo' />
                         <ul>
                             <li>
@@ -58,7 +80,7 @@ class Info extends Component {
                                 </Link>
                             </li>
                         </ul>
-                        <p className='teamName'> {userName}</p>
+                        <p className={'teamName'+this.state.deviceType}> {userName}</p>
                     </header>
                     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet"/>
                     <div className='Background'>
@@ -66,7 +88,7 @@ class Info extends Component {
                     </div>
 
                     <div className='BossWhatDoI'>
-                        <svg width={ Math.round(0.47 * this.state.screensize[0])+'px'}
+                        <svg width={ Math.round(this.state.svgsizes.notToForget[0] * this.state.screensize[0])+'px'}
                              height={Math.round(0.08 * this.state.screensize[1])+'px'}>
                             <rect className='background' 
                                   width='100%' 
@@ -80,7 +102,7 @@ class Info extends Component {
                     </div>
 
                     <div className='NotToForget'>
-                        <svg width={ Math.round(0.47 * this.state.screensize[0])+'px'}  
+                        <svg width={ Math.round(this.state.svgsizes.notToForget[0] * this.state.screensize[0])+'px'}  
                              height={Math.round(0.65 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
@@ -152,7 +174,7 @@ class Info extends Component {
 
 
                     <div className='WhereDoIGo'>
-                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'} 
+                        <svg width={ Math.round(this.state.svgsizes.whereAbouts[0] * this.state.screensize[0])+'px'} 
                              height={Math.round(0.08 * this.state.screensize[1])+'px'}>
                             <rect className='background' 
                                   width='100%' 
@@ -166,7 +188,7 @@ class Info extends Component {
                     </div>
 
                     <div className='Times'>
-                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'}  
+                        <svg width={ Math.round(this.state.svgsizes.whereAbouts[0] * this.state.screensize[0])+'px'}  
                              height={Math.round(0.27 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
@@ -204,7 +226,7 @@ class Info extends Component {
 
 
                     <div className='WhoDoIContact'>
-                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'} 
+                        <svg width={ Math.round(this.state.svgsizes.contacts[0] * this.state.screensize[0])+'px'} 
                              height={Math.round(0.08 * this.state.screensize[1])+'px'}>
                             <rect className='background' 
                                   width='100%' 
@@ -218,7 +240,7 @@ class Info extends Component {
                     </div>
 
                     <div className='Contact'>
-                        <svg width={ Math.round(0.33 * this.state.screensize[0])+'px'}  
+                        <svg width={ Math.round(this.state.svgsizes.contacts[0] * this.state.screensize[0])+'px'}  
                              height={Math.round(0.25 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 

@@ -17,13 +17,6 @@ import '../App.css';
 */
 class Home extends Component {
 
-    constructor() {
-        super();
-        //import image from './Harry Potter Characters/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg'
-        //this.state = {image:image};
-
-    };
-
     render() {
         let componentsToRender;
         try {
@@ -31,9 +24,6 @@ class Home extends Component {
             const userName = this.props.location.state.username;
             const path2pic = './Harry Potter Characters/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
             const teamText = teamTexts[teamName];
-
-            console.log([teamName])
-            console.log([path2pic])
 
             componentsToRender = (
                 <div className='Home'>

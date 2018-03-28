@@ -7,9 +7,18 @@ body{
 }
 
 
-.PersonalPage {
-  text-align : center ;
-}
+
+
+/* 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++              ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++   COMPUTER   ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++              ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* --------- APP HEADER --------- */
 
 .App-logo {
   height       : 50px ;
@@ -22,13 +31,9 @@ body{
 }
 
 
-
-/* --------- APP HEADER --------- */
-
-
 .PersonalPageHeader {
   background-color: black               ;
-  opacity         : 0.95                 ;
+  opacity         : 0.95                ;
   height          : 65px                ;
   width           : 100%                ;
   color           : black               ;
@@ -37,6 +42,7 @@ body{
   box-shadow      : 0px 0.51px 3px grey ;
   position        : fixed               ;
   z-index         : 5                   ;
+  overflow        : hidden              ;
 }
 
 .PersonalPageHeader ul {
@@ -60,12 +66,11 @@ body{
   font-size          : 16px              ;
   height             : 65px              ;
   width              : 150px             ;
-  border             : none;
+  border             : none              ;
   padding-right      : 12px              ;
   padding-left       : 12px              ;
   -webkit-user-select: none              ;
   user-select        : none              ;
-  font-family: arial ;
 
 }
 
@@ -82,29 +87,6 @@ body{
 
 
 
-.App-title {
-  font-size: 12px ;
-};
-
-.App-intro {
-  font-size: large ;
-}
-
-
-.Sidebar{
-  position        : absolute ;
-  width           : 3%       ;
-  height          : 100%     ;
-  background-color: #2D2D2D  ;
-  text-align      : left     ;
-  top             : 0%       ;
-  bottom          : 0%       ; 
-  z-index         : 4        ;
-}
-
-
-
-
 
 /* =====================  GENERAL  ===================== */
 
@@ -115,7 +97,7 @@ body{
     top       : 0      ;
     width     : 100%   ;
     height    : auto   ;
-    min-width : 1200px ;
+    min-width : 1400px ;
     z-index   : -5     ;
 }
 
@@ -242,12 +224,6 @@ body{
   text-align: left    ;
   z-index   : 0        ;
 }
-
-
-
-/* =====================  GAMES  ===================== */
-
-
 
 
 /* =====================  INFO  ===================== */
@@ -500,6 +476,475 @@ body{
 
 
 
+/* 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++            +++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++   MOBILE   +++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++            +++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
 
-/* name selection box */
+
+/* --------- APP HEADER --------- */
+
+
+.App-logoMobile {
+  height       : 50px ;
+  width        : 50px ;
+  padding-top  : 5px  ;
+  padding-left : 20px ;
+  padding-right: 10px ;
+  float        : left ;
+
+}
+
+
+.PersonalPageHeaderMobile {
+  background-color: black               ;
+  opacity         : 0.95                 ;
+  height          : 65px                ;
+  width           : 100%                ;
+  color           : black               ;
+  float           : center              ;
+  text-align      : center              ;
+  box-shadow      : 0px 0.51px 3px grey ;
+  position        : fixed               ;
+  z-index         : 5                   ;
+}
+
+.PersonalPageHeaderMobile ul {
+  list-style-type: none   ;
+  margin         : 0      ;
+  padding        : 0      ;
+  overflow       : hidden ;
+}
+
+.PersonalPageHeaderMobile li {
+  float        : left;
+}
+
+
+
+
+.PersonalPageHeaderMobile button{
+  float: left ; 
+  background-color   : inherit           ;
+  color              : #D5D5D5           ;
+  font-size          : 16px              ;
+  height             : 65px              ;
+  width              : 150px             ;
+  border             : none;
+  padding-right      : 12px              ;
+  padding-left       : 12px              ;
+  -webkit-user-select: none              ;
+  user-select        : none              ;
+  font-family: arial ;
+
+}
+
+.PersonalPageHeaderMobile button:hover{
+  background-color: #5A5A5A ;
+  transition      : 0.6s    ;
+}
+
+.PersonalPageHeaderMobile button:focus{
+    outline: none ;
+}
+
+
+
+
+
+
+
+/* =====================  GENERAL MOBILE   ===================== */
+
+/*
+.BackgroundMobile img {
+    position  : fixed  ;
+    right     : 0      ;
+    top       : 0      ;
+    width     : 100%   ;
+    height    : auto   ;
+    min-width : 1200px ;
+    z-index   : -5     ;
+}
+*/
+
+.teamNameMobile{
+  position  : absolute ;
+  color     : white    ;
+  top       : 17%      ;  
+  right     : 0%       ; 
+  width     : 100%     ;
+  font-size : 24px     ;
+  text-align: right    ;
+  z-index   : 0        ;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+
+/* =====================  INTRO MOBILE  ===================== */
+
+/*
+.IntroMobile .react-select__container{
+  position: absolute;
+  top: 50%;
+  left:30%;
+  width:40%;
+}
+
+
+.IntroMobile .react-select__control{
+  background-color: rgba(7,7,7,0.6);
+  border-color:#F0F0F0;
+  border-radius:1px;
+  border-width:1px;
+}
+
+
+.IntroMobile .react-select__menu{
+  background-color: rgba(7,7,7,0.7);
+  border-color:#F0F0F0;
+  border-radius:1px;
+  border-width:1px;
+  max-height: 400%;
+}
+
+.IntroMobile .react-select__menu-list{
+  color:white;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.IntroMobile .react-select__menu-list .react-select__option--isFocused{
+  background: rgba(80,80,80,0.7); 
+  color:white;
+}
+
+
+
+.IntroMobile .react-select__input input{
+  color: white;
+}
+
+.IntroMobile .react-select__single-value{
+  color:white;
+}
+
+
+
+
+
+.IntroMobile .ConvocTitle{
+  position  : absolute ;
+  color     : white    ;
+  top       : 0%       ;  
+  left      : 0%       ;
+  width     :100%      ; 
+  text-align: center   ;
+  font-size : 74px     ;
+  text-anchor: start   ;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+.IntroMobile .HPLogo img{
+    position  : fixed  ;
+    top       : 28%    ;
+    left      : 40%    ;
+    width     : 20%    ;
+    height    : auto   ;
+    min-width : 100px  ;
+    opacity   : 0.85   ;
+}
+*/
+
+/* =====================  HOME MOBILE  ===================== */
+
+/*
+
+.HomeMobile .ProfilePicture{
+  position : absolute ;
+  width    : 200px    ;
+  height   : auto     ;
+  top      : 18%      ;
+  right    : 12%       ;
+  border   : 1px solid #021a40;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8), 0 0 20px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.HomeMobile .textTitle{
+  position  : absolute ;
+  color     : white    ;
+  top       : 110px     ;  
+  left      : 10%      ; 
+  font-size : 40px     ;
+  text-align: left     ;
+  z-index   : 0        ;
+}
+
+.HomeMobile .textExplication{
+  position  : absolute ;
+  color     : white    ;
+  top       : 210px    ;  
+  left      : 10%      ;
+  width     : 50%    ;  
+  font-size : 20px     ;
+  text-align: left    ;
+  z-index   : 0        ;
+}
+*/
+
+/* =====================  INFO  ===================== */
+
+/* BACKGROUNDS */
+
+.InfoMobile .BossWhatDoI rect{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+}
+
+.InfoMobile .WhereDoIGo rect{
+  fill    :#292929  ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+.InfoMobile .WhoDoIContact rect{
+  fill    :#7F0909  ;
+  opacity : 0.6     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+
+
+.InfoMobile .NotToForget svg .background{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+}
+
+.InfoMobile .Times svg .background{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+  z-index : -3      ;
+}
+
+.InfoMobile .Contact svg .background{
+  fill    : #7F0909 ;
+  opacity : 0.6     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+  stroke  : #7F0909 ;
+}
+
+
+
+
+
+
+
+
+/* NOT TO FORGET */
+
+.InfoMobile .BossWhatDoI{
+  position:absolute;
+  top     : 25% ;
+  left    : 7%  ;
+  z-index : 0   ;
+}
+
+
+.InfoMobile .BossWhatDoI text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 38px;
+  text-anchor : middle;
+  fill        : #F5F5F5;
+}
+
+
+.InfoMobile .NotToForget{
+  position:absolute;
+  top    : 35% ;
+  left   : 7%  ;
+  z-index: 0   ;
+}
+
+
+.InfoMobile .NotToForget svg .TitleY{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : start;
+}
+
+
+.InfoMobile .NotToForget svg .ListingY{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 18px;
+  fill        : #F5F5F5;
+}
+
+
+.InfoMobile .NotToForget svg .Separator{
+  stroke       : #F5F5F5 ;
+  stroke-width : 1; 
+}
+
+
+.InfoMobile .NotToForget svg .TitleN{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : start;
+}
+
+
+.InfoMobile .NotToForget svg .ListingN{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 18px;
+  fill        : #F5F5F5;
+}
+
+
+
+
+/* WHEREABOUTS */
+
+.InfoMobile .WhereDoIGo{
+  position:absolute;
+  top    : 105% ;
+  left   : 7% ;
+  z-index: 0   ;
+}
+
+
+.InfoMobile .WhereDoIGo text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 38px;
+  text-anchor : middle;
+  fill        : #F5F5F5;
+}
+
+
+
+
+.InfoMobile .Times{
+  position:absolute;
+  top    : 115% ;
+  left   : 7% ;
+  z-index: 0   ;
+}
+
+.InfoMobile .Times svg .Title{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : start;
+}
+
+.InfoMobile .Times svg .Address{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 18px;
+  text-anchor : start;
+}
+
+
+.InfoMobile .Times svg .ArrivalTitle{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : middle;
+}
+
+.InfoMobile .Times svg .ArrivalTime{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 16px;
+  text-anchor : middle;
+}
+
+.InfoMobile .Times svg .Separator{
+  stroke       : white ;
+  stroke-width : 2; 
+}
+
+.InfoMobile .Times svg .DepartureTitle{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 25px;
+  text-anchor : middle;
+}
+
+.InfoMobile .Times svg .DepartureTime{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 16px;
+  text-anchor : middle;
+}
+
+
+
+/* CONTACT INFO */
+
+
+.InfoMobile .WhoDoIContact{
+  position:absolute;
+  top     : 145% ;
+  left    : 7% ;
+  z-index : 0   ;
+}
+
+
+.InfoMobile .WhoDoIContact text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 38px;
+  text-anchor : middle;
+  fill        : #D5D5D5;
+}
+
+
+
+.InfoMobile .Contact{
+  position:absolute;
+  top     : 155% ;
+  left    : 7% ;
+  z-index : 0   ;
+}
+
+.InfoMobile .Contact svg .Title{
+  fill        : #D5D5D5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 14px;
+  text-anchor : start;
+}
+
+.InfoMobile .Contact svg .ContactNames{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 12px;
+  text-anchor : start;
+}
+
+.InfoMobile .Contact svg .ContactNumbers{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 12px;
+  text-anchor : end;
+}
+
 
