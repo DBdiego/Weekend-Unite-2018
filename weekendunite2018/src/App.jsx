@@ -12,7 +12,7 @@ class App extends Component {
       <div className = 'App'>
         <Routers/>
         <ReactMusicPlayer 
-          url={'./HP-theme.mp3'} 
+          url={'/intro/HP-theme.mp3'} 
           autoLoad={true} 
           autoPlay={true} 
           loop={true}
