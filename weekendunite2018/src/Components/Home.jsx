@@ -90,7 +90,7 @@ class Home extends Component {
 
                             <li>
                             <Link to={{pathname:'/info', state:{username:userName, team:teamName}}} >
-                                    <button type='button'>INFOS PRATIQUE</button>        
+                                    <button type='button'>INFOS PRATIQUES</button>        
                                 </Link>
                             </li>
                             <li>

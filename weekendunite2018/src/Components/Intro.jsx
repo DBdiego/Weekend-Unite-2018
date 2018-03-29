@@ -107,7 +107,7 @@ class Intro extends Component {
                     <img src={hogwardsBackground} className='BackgroundImage' alt='' />
                 </div>
 
-                <p className={'ConvocTitle'+this.state.deviceType}>Convocation Weekend Unité 2018</p>
+                <p className={'ConvocTitle'+this.state.deviceType}>Convocation Week-end Unité 2018</p>
 
                 <div className='NameInput'>
                     <Select 
@@ -116,7 +116,7 @@ class Intro extends Component {
                         value={this.selectedOption}
                         onChange={this.handleChange}
                         options={this.state.options}
-                        placeholder='Quel est votre nom?'
+                        placeholder='Quel est ton nom?'
                         searchable={true}
                     />
                 </div>

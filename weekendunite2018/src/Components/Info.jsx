@@ -91,7 +91,7 @@ class Info extends Component {
 
                             <li>
                             <Link to={{pathname:'/info', state:{username:userName, team:teamName}}} >
-                                    <button type='button'>INFOS PRATIQUE</button>        
+                                    <button type='button'>INFOS PRATIQUES</button>        
                                 </Link>
                             </li>
                             <li>
@@ -139,10 +139,10 @@ class Info extends Component {
                                 - Matelas
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                - Trousse de toillette
+                                - Trousse de toilette
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                - Uniforme Impecable
+                                - Uniforme Impeccable
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
                                 - Gamelle & Couverts
@@ -279,10 +279,10 @@ class Info extends Component {
                             
                             <text className='Title'>
                                 <tspan x='10%' y='25px'>
-                                Envoie ton hibou pour prevenir de ton absence. Bien
+                                Envoie ton hibou pour prévenir de ton absence. Bien
                                 </tspan>
                                 <tspan x='10%' dy='10%'>
-                                évidement accompagné d'une raison magique. 
+                                évidemment accompagné d'une raison magique. 
                                 </tspan>
                             </text>
                             
