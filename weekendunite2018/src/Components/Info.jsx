@@ -227,13 +227,21 @@ class Info extends Component {
 
 
 
-                            <text className='ArrivalTitle' x='25%' y='75%'>Arrivée </text>
-                            <text className='ArrivalTime'  x='25%' y='90%'>Vendredi 20/04 à 12:30 </text>
+                            <text className='ArrivalTitle' x='25%' y='72%'>Arrivée </text>
+                            <text className='ArrivalTime'  x='25%' y='90%'>Samedi 21/04 à 10:00 </text>
 
-                            <line className='Separator' x1='50%' y1='80%' x2='50%' y2='95%' />
+                            <line className='Separator' x1='50%' y1='73%' x2='50%' y2='95%' />
 
-                            <text className='DepartureTitle' x='75%' y='75%'>Départ</text>
-                            <text className='DepartureTime'  x='75%' y='90%'>Dimanche 22/04 à 12:30 </text>
+                            <text className='DepartureTitle' x='75%' y='72%'>Départ</text>
+                            <text className='DepartureTime'>
+
+                                <tspan x='75%' y='86%'>
+                                Dimanche 22/04 à 11:00 
+                                </tspan>
+                                <tspan x='75%' dy='10%'>
+                                pour une messe
+                                </tspan>
+                            </text>
 
 
                         </svg>
