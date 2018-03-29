@@ -65,6 +65,7 @@ class Info extends Component {
         return [deviceType, componentPercentages];
     };
 
+//<text className='Title' x='8%' y='22%'>Addresse de la rentrée</text>
 
     render() {
         let componentsToRender;
@@ -132,33 +133,35 @@ class Info extends Component {
 
                             <text className='ListingY'>
                                 <tspan x='10%' y="75px">
-                                1. Sac de couchage
+                                - Sac de couchage
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                2. Matelas
+                                - Matelas
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                3. Trousse de toillette
+                                - Trousse de toillette
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                4. Uniforme Impecable
+                                - Uniforme Impecable
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                5. Gamelle
+                                - Gamelle & Couverts
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                6. Couverts
+                                - Gourde
                                 </tspan>
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                7. Ta bonne humeur
+                                - Ta bonne humeur
                                 </tspan>
-
                                 <tspan x='10%' dy={listingSpace + '%'}>
-                                8. ...
+                                - Gros pull
+                                </tspan>
+                                <tspan x='10%' dy={listingSpace + '%'}>
+                                - Veste imperméable
                                 </tspan>
                             </text>
 
-                            <line className='Separator' x1='44%' y1='15%' x2='44%' y2='80%' />
+                            <line className='Separator' x1='46%' y1='15%' x2='46%' y2='80%' />
 
                             <text className='TitleN' x='50%' y='35px'>A Oublier:</text>
 
@@ -177,10 +180,10 @@ class Info extends Component {
                                 - i...
                                 </tspan>
                                 <tspan x='53%' dy={listingSpace + '%'}>
-                                - Tout autre appareil de type:
+                                - Et tout autre appareil de type:
                                 </tspan>
                                 <tspan x='57%' dy={listingSpace-0.5 + '%'}>
-                                "éléctronique"
+                                "électronique"
                                 </tspan>
 
                             </text>
@@ -214,18 +217,18 @@ class Info extends Component {
                                   y='0'
                             />  
 
-                            <text className='Title' x='8%' y='22%'>Addresse de la rentrée</text>
+                            
                             
                             <text className='Address'>
-                                <tspan x='15%' y='36%'>
+                                <tspan x='30%' y='23%'>
                                 Rue de Nérette 2, 
                                 </tspan>
-                                <tspan x='15%' dy='15%'>
+                                <tspan x='30%' dy='15%'>
                                 6900 Marche-en-Famenne
                                 </tspan>
                             </text>
 
-
+                            <line className='Separator' x1='25%' y1='50%' x2='75%' y2='50%' />
 
                             <text className='ArrivalTitle' x='25%' y='72%'>Arrivée </text>
                             <text className='ArrivalTime'  x='25%' y='90%'>Samedi 21/04 à 10:00 </text>

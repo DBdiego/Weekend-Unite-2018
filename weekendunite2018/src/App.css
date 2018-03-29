@@ -377,14 +377,14 @@ body{
 .Info .Times svg .Title{
   fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
-  font-size   : 2vw;
+  font-size   : 1.8vw;
   text-anchor : start;
 }
 
 .Info .Times svg .Address{
   fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
-  font-size   : 1.5vw;
+  font-size   : 1.3vw;
   text-anchor : start;
 }
 
@@ -392,33 +392,33 @@ body{
 .Info .Times svg .ArrivalTitle{
   fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
-  font-size   : 2vw;
+  font-size   : 1.4vw;
   text-anchor : middle;
 }
 
 .Info .Times svg .ArrivalTime{
   fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
-  font-size   : 1.3vw;
+  font-size   : 1vw;
   text-anchor : middle;
 }
 
 .Info .Times svg .Separator{
   stroke       : white ;
-  stroke-width : 2; 
+  stroke-width : 1; 
 }
 
 .Info .Times svg .DepartureTitle{
   fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
-  font-size   : 2vw;
+  font-size   : 1.4vw;
   text-anchor : middle;
 }
 
 .Info .Times svg .DepartureTime{
   fill        : #F5F5F5;/*#FFC500 ;*/
   font-family : 'Titillium Web', sans-serif;
-  font-size   : 1.3vw;
+  font-size   : 1vw;
   text-anchor : middle;
 }
 
