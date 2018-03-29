@@ -267,37 +267,37 @@ class Info extends Component {
                             />  
                             
                             <text className='Title'>
-                                <tspan x='10%' y="25px">
+                                <tspan x='10%' y='25px'>
                                 Envoie ton hibou pour prevenir de ton absence. Bien
                                 </tspan>
-                                <tspan x='10%' dy="15px">
+                                <tspan x='10%' dy='10%'>
                                 évidement accompagné d'une raison magique. 
                                 </tspan>
                             </text>
                             
                             <text className='ContactNames'>
 
-                                <tspan x='15%' y='70px'>
-                                Grand Chef Bala
+                                <tspan x='15%' y='78px'>
+                                Baladins
                                 </tspan>
                                 <tspan x='15%' dy={contactsSapce + '%'}>
-                                Akéla Louvettes
+                                Louvettes (Akéla)
                                 </tspan>
                                 <tspan x='15%' dy={contactsSapce + '%'}>
-                                Akéla Louveteaux
+                                Louveteaux (Akéla)
                                 </tspan>
                                 <tspan x='15%' dy={contactsSapce + '%'}>
-                                CT Guide
+                                Guides (CT)
                                 </tspan>
                                 <tspan x='15%' dy={contactsSapce + '%'}>
-                                CT Scout
+                                Scout (Gibbon)
                                 </tspan>
                             </text>
 
 
                             <text className='ContactNumbers'>
 
-                                <tspan x='80%' y='70px'>
+                                <tspan x='80%' y='78px'>
                                 0 491 51 29 95
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
@@ -310,7 +310,7 @@ class Info extends Component {
                                 0 478 05 88 37
                                 </tspan>
                                 <tspan x='80%' dy={contactsSapce + '%'}>
-                                0 491 59 33 64
+                                0 489 00 30 56
                                 </tspan>
                             </text>
 
