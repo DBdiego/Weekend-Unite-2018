@@ -71,8 +71,8 @@ class Home extends Component {
         try {
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
-            //const path2pic = '/home/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
-            const path2pic = './'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
+            const path2pic = '/home/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
+            //const path2pic = './'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
             const teamText = teamTexts[teamName];
 
             componentsToRender = (
