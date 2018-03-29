@@ -195,7 +195,7 @@ body{
   height   : auto     ;
   top      : 18%      ;
   right    : 12%       ;
-  border   : 1px solid #021a40;
+  border   : 1px solid black;
   border-radius: 6px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8), 0 0 20px 2px rgba(0, 0, 0, 0.1);
 
@@ -583,12 +583,12 @@ body{
 
 /* =====================  INTRO MOBILE  ===================== */
 
-/*
+
 .IntroMobile .react-select__container{
   position: absolute;
-  top: 50%;
-  left:30%;
-  width:40%;
+  top  : 55% ;
+  left : 10% ;
+  width: 80% ;
 }
 
 
@@ -602,21 +602,21 @@ body{
 
 .IntroMobile .react-select__menu{
   background-color: rgba(7,7,7,0.7);
-  border-color:#F0F0F0;
-  border-radius:1px;
-  border-width:1px;
-  max-height: 400%;
+  border-color : #F0F0F0 ;
+  border-radius: 1px     ;
+  border-width : 1px     ;
+  max-height   : 400%    ;
 }
 
 .IntroMobile .react-select__menu-list{
-  color:white;
-  padding-top: 0;
-  padding-bottom: 0;
+  color         :white ;
+  padding-top   : 0    ;
+  padding-bottom: 0    ;
 }
 
 .IntroMobile .react-select__menu-list .react-select__option--isFocused{
-  background: rgba(80,80,80,0.7); 
-  color:white;
+  background: rgba(80,80,80,0.7) ; 
+  color     : white              ;
 }
 
 
@@ -626,36 +626,36 @@ body{
 }
 
 .IntroMobile .react-select__single-value{
-  color:white;
+  color: white;
 }
 
 
 
 
 
-.IntroMobile .ConvocTitle{
-  position  : absolute ;
-  color     : white    ;
-  top       : 0%       ;  
-  left      : 0%       ;
-  width     :100%      ; 
-  text-align: center   ;
-  font-size : 74px     ;
-  text-anchor: start   ;
+.IntroMobile .ConvocTitleMobile{
+  position   : absolute ;
+  color      : white    ;
+  top        : 8%       ;  
+  left       : 0%       ;
+  width      :100%      ; 
+  text-align : center   ;
+  font-size  : 9vw      ;
+  text-anchor: start    ;
   font-family: 'Great Vibes', cursive;
 }
 
 
 .IntroMobile .HPLogo img{
-    position  : fixed  ;
-    top       : 28%    ;
-    left      : 40%    ;
-    width     : 20%    ;
-    height    : auto   ;
-    min-width : 100px  ;
-    opacity   : 0.85   ;
+    position  : absolute ;
+    top       : 35%      ;
+    left      : 30%      ;
+    width     : 40%      ;
+    height    : auto     ;
+    min-width : 100px    ;
+    opacity   : 0.85     ;
 }
-*/
+
 
 /* =====================  HOME MOBILE  ===================== */
 
@@ -667,7 +667,7 @@ body{
   height   : auto     ;
   top      : 44%      ;
   left     : 25%      ;
-  border   : 1px solid #021a40;
+  border   : 1px solid black;
   border-radius: 6px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8), 0 0 20px 2px rgba(0, 0, 0, 0.1);
 

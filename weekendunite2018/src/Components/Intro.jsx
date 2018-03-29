@@ -15,18 +15,47 @@ class Intro extends Component {
         super();
 
         const options = this.optionCreator(database.names)
-        this.state = {tab  :'Intro',
-                      options:options,
-                      selectedOption:'',
+        const deviceType = this.componentSizes([window.innerWidth, window.innerHeight]);
+        console.log(deviceType)
+        this.state = {tab            :'Intro'   ,
+                      options        :options   ,
+                      selectedOption :''        ,
+                      deviceType     :deviceType,
                       redirect:''};
 
-        this.handleChange = this.handleChange.bind(this)
-        this.optionCreator = this.optionCreator.bind(this);
-
-
+        this.handleChange   = this.handleChange.bind(this)
+        this.optionCreator  = this.optionCreator.bind(this);
+        this.componentSizes = this.componentSizes.bind(this)
     };
 
 
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions.bind(this));
+    };
+
+
+    //Update screen dimensions
+    updateDimensions() {
+        console.log('screen update')
+        const newWidth  = window.innerWidth  ;
+        const newHeight = window.innerHeight ;
+
+        const deviceType = this.componentSizes([newWidth, newHeight])
+
+        this.setState({screensize : [newWidth, newHeight],
+                       deviceType : deviceType
+                    });
+    };
+
+    componentSizes(screenSize){
+
+        let deviceType = '';
+        if (screenSize[0]< 700){
+            deviceType = 'Mobile';
+        }
+
+        return deviceType;
+    };
 
 
     optionCreator(names){
@@ -72,13 +101,13 @@ class Intro extends Component {
 
     render() {
         return (
-            <div className='Intro'>
+            <div className={'Intro'+this.state.deviceType}>
 
-                <div className='Background'>
-                    <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
+                <div className={'Background'+this.state.deviceType}>
+                    <img src={hogwardsBackground} className='BackgroundImage' alt='' />
                 </div>
 
-                <p className='ConvocTitle'>Convocation Weekend Unité 2018</p>
+                <p className={'ConvocTitle'+this.state.deviceType}>Convocation Weekend Unité 2018</p>
 
                 <div className='NameInput'>
                     <Select 
