@@ -16,6 +16,55 @@ import '../App.css';
 
 */
 class Home extends Component {
+    constructor() {
+        super();
+        let [deviceType, svgsizes] = this.componentSizes([window.innerWidth, window.innerHeight])
+
+        this.state = {screensize:[window.innerWidth, window.innerHeight],
+                      deviceType:deviceType,
+                      svgsizes:svgsizes
+                      };
+
+        this.componentSizes = this.componentSizes.bind(this)
+    };
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions.bind(this));
+    };
+
+
+    //Update screen dimensions
+    updateDimensions() {
+        const newWidth  = window.innerWidth  ;
+        const newHeight = window.innerHeight ;
+
+        let [deviceType, svgsizes] = this.componentSizes([newWidth, newHeight])
+
+        this.setState({screensize : [newWidth, newHeight],
+                       deviceType : deviceType,
+                       svgsizes   : svgsizes
+                    });
+    };
+
+    componentSizes(screenSize){
+
+        let deviceType = '';
+        let componentPercentages = {
+                                notToForget:[0.47, ],
+                                whereAbouts:[0.33, ],
+                                contacts   :[0.33, ]};
+
+        if (screenSize[0]< 700){
+            deviceType = 'Mobile';
+            componentPercentages = {
+                                notToForget:[0.90, ],
+                                whereAbouts:[0.90, ],
+                                contacts   :[0.90, ]};
+        }
+
+        return [deviceType, componentPercentages];
+
+    };
 
     render() {
         let componentsToRender;
@@ -26,11 +75,11 @@ class Home extends Component {
             const teamText = teamTexts[teamName];
 
             componentsToRender = (
-                <div className='Home'>
-                    <header className = 'PersonalPageHeader'>
+                <div className={'Home'+this.state.deviceType}>
+                    <header className = {'PersonalPageHeader'+this.state.deviceType}>
                         <ul>
                             <li>
-                                <img src={logo} className = 'App-logo' alt='logo' />
+                                <img src={logo} className = {'App-logo'+this.state.deviceType} alt='logo' />
                             </li>
                             <li>
                                 <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
@@ -43,11 +92,13 @@ class Home extends Component {
                                     <button type='button'>INFOS PRATIQUE</button>        
                                 </Link>
                             </li>
-
+                            <li>
+                                <p className={'teamName'+this.state.deviceType}> {userName}</p>
+                            </li>
                         </ul>
-                        <p className='teamName'> {userName}</p>
+                        
                     </header>
-                    <div className='Background'>
+                    <div className={'Background'+this.state.deviceType}>
                         <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
                     </div>
 

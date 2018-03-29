@@ -17,13 +17,14 @@ import '../App.css';
 class Info extends Component {
     constructor() {
         super();
+        let [deviceType, svgsizes] = this.componentSizes([window.innerWidth, window.innerHeight])
+
         this.state = {screensize:[window.innerWidth, window.innerHeight],
-                      deviceType:'',
-                      svgsizes:{notToForget:[0.47, ],
-                                whereAbouts:[0.33, ],
-                                contacts   :[0.33, ]
-                            }
-                      }; //'' = computer and 'mobile' = phone, tablet (e.g smaller screens)
+                      deviceType:deviceType,
+                      svgsizes:svgsizes
+                      };
+
+        this.componentSizes = this.componentSizes.bind(this)
 
     };
 
@@ -34,25 +35,36 @@ class Info extends Component {
 
     //Update screen dimensions
     updateDimensions() {
-        console.log('updates screen')
         const newWidth  = window.innerWidth  ;
         const newHeight = window.innerHeight ;
-        let deviceType = '';
-        let svgsizes   = {notToForget:[0.47, ],
-                          whereAbouts:[0.33, ],
-                          contacts   :[0.33, ]}
 
-        if (newWidth < 700){
-            deviceType = 'Mobile'
-            svgsizes   = {notToForget:[0.9, ],
-                          whereAbouts:[0.9, ],
-                          contacts   :[0.9, ]}
-        }
+        let [deviceType, svgsizes] = this.componentSizes([newWidth, newHeight])
+
         this.setState({screensize : [newWidth, newHeight],
                        deviceType : deviceType,
                        svgsizes   : svgsizes
                     });
     };
+
+    componentSizes(screenSize){
+
+        let deviceType = '';
+        let componentPercentages = {
+                                notToForget:[0.47, ],
+                                whereAbouts:[0.33, ],
+                                contacts   :[0.33, ]};
+
+        if (screenSize[0]< 700){
+            deviceType = 'Mobile';
+            componentPercentages = {
+                                notToForget:[0.90, ],
+                                whereAbouts:[0.90, ],
+                                contacts   :[0.90, ]};
+        }
+
+        return [deviceType, componentPercentages];
+    };
+
 
     render() {
         let componentsToRender;
@@ -60,14 +72,16 @@ class Info extends Component {
 
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
-            const listingSpace  = 8 ; //%
-            const contactsSapce = 12;//%
+            const listingSpace  = 8 ; //[%]
+            const contactsSapce = 12; //[%]
 
             componentsToRender =  (
                 <div className={'Info'+this.state.deviceType}>
                     <header className={'PersonalPageHeader'+this.state.deviceType}>
-                        <img src={logo} className = 'App-logo' alt='logo' />
                         <ul>
+                            <li>
+                                <img src={logo} className = {'App-logo'+this.state.deviceType} alt='logo' />
+                            </li>
                             <li>
                                 <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
@@ -79,11 +93,13 @@ class Info extends Component {
                                     <button type='button'>INFOS PRATIQUE</button>        
                                 </Link>
                             </li>
+                            <li>
+                                <p className={'teamName'+this.state.deviceType}> {userName}</p>
+                            </li>
                         </ul>
-                        <p className={'teamName'+this.state.deviceType}> {userName}</p>
                     </header>
                     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet"/>
-                    <div className='Background'>
+                    <div className={'Background'+this.state.deviceType}>
                         <img src={hogwardsBackground} className = 'BackgroundImage' alt='' />
                     </div>
 
@@ -97,7 +113,7 @@ class Info extends Component {
                                   y='0'
                             />  
 
-                            <text x='50%' y='45px'>Chef? Je mets quoi dans mon sac?</text>
+                            <text x='50%' y='70%'>Chef? Je mets quoi dans mon sac?</text>
                         </svg>
                     </div>
 
@@ -183,7 +199,7 @@ class Info extends Component {
                                   y='0'
                             />  
 
-                            <text x='50%' y='45px'> Où est Poudlard?</text>
+                            <text x='50%' y='70%'> Où est Poudlard?</text>
                         </svg>
                     </div>
 
@@ -235,13 +251,13 @@ class Info extends Component {
                                   y='0'
                             />  
 
-                            <text x='50%' y='45px'>Un Empêchement?</text>
+                            <text x='50%' y='70%'>Un Empêchement?</text>
                         </svg>
                     </div>
 
                     <div className='Contact'>
                         <svg width={ Math.round(this.state.svgsizes.contacts[0] * this.state.screensize[0])+'px'}  
-                             height={Math.round(0.25 * this.state.screensize[1])+'px'}>
+                             height={Math.round(0.30 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 
