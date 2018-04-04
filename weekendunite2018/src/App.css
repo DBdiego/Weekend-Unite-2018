@@ -1,0 +1,948 @@
+body{
+  background-color: #1B1B1B;
+  font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+}
+
+
+
+
+/* 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++              ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++   COMPUTER   ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++              ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* --------- APP HEADER --------- */
+
+.App-logo {
+  height       : 50px ;
+  width        : 50px ;
+  padding-top  : 5px  ;
+  padding-left : 20px ;
+  padding-right: 10px ;
+  float        : left ;
+
+}
+
+
+.PersonalPageHeader {
+  background-color: black               ;
+  opacity         : 0.95                ;
+  height          : 65px                ;
+  width           : 100%                ;
+  color           : black               ;
+  float           : center              ;
+  text-align      : center              ;
+  box-shadow      : 0px 0.51px 3px grey ;
+  position        : fixed               ;
+  z-index         : 5                   ;
+  overflow        : hidden              ;
+}
+
+.PersonalPageHeader ul {
+  list-style-type: none   ;
+  margin         : 0      ;
+  padding        : 0      ;
+  overflow       : hidden ;
+}
+
+.PersonalPageHeader li {
+  float        : left;
+}
+
+
+
+
+.PersonalPageHeader button{
+  float: left ; 
+  background-color   : inherit           ;
+  color              : #D5D5D5           ;
+  font-size          : 16px              ;
+  height             : 65px              ;
+  width              : 150px             ;
+  border             : none              ;
+  padding-right      : 12px              ;
+  padding-left       : 12px              ;
+  -webkit-user-select: none              ;
+  user-select        : none              ;
+}
+
+.PersonalPageHeader button:hover{
+  background-color: #5A5A5A ;
+  transition      : 0.6s    ;
+}
+
+.PersonalPageHeader button:focus{
+    outline: none ;
+}
+
+
+
+
+
+
+/* =====================  GENERAL  ===================== */
+
+
+.Background img {
+    position  : fixed  ;
+    right     : 0      ;
+    top       : 0      ;
+    width     : 100%   ;
+    height    : auto   ;
+    min-width : 1400px ;
+    z-index   : -5     ;
+}
+
+
+.teamName{
+  position  : absolute ;
+  color     : white    ;
+  right: 5% ;
+  font-size : 24px     ;
+  text-align: right    ;
+  z-index   : 0        ;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+/* =====================  INTRO  ===================== */
+
+
+.Intro .react-select__container{
+  position: absolute;
+  top: 50%;
+  left:30%;
+  width:40%;
+}
+
+
+.Intro .react-select__control{
+  background-color: rgba(7,7,7,0.6);
+  border-color:#F0F0F0;
+  border-radius:1px;
+  border-width:1px;
+}
+
+
+.Intro .react-select__menu{
+  background-color: rgba(7,7,7,0.7);
+  border-color:#F0F0F0;
+  border-radius:1px;
+  border-width:1px;
+  max-height: 400%;
+}
+
+.Intro .react-select__menu-list{
+  color:white;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.Intro .react-select__menu-list .react-select__option--isFocused{
+  background: rgba(80,80,80,0.7); 
+  color:white;
+}
+
+
+
+.Intro .react-select__input input{
+  color: white;
+}
+
+.Intro .react-select__single-value{
+  color:white;
+}
+
+
+
+
+
+.Intro .ConvocTitle{
+  position  : absolute ;
+  color     : white    ;
+  top       : 0%       ;  
+  left      : 0%       ;
+  width     :100%      ; 
+  text-align: center   ;
+  font-size : 74px     ;
+  text-anchor: start   ;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+.Intro .HPLogo img{
+    position  : fixed  ;
+    top       : 28%    ;
+    left      : 40%    ;
+    width     : 20%    ;
+    height    : auto   ;
+    min-width : 100px  ;
+    opacity   : 0.85   ;
+}
+
+/* =====================  HOME  ===================== */
+
+.Home .ProfilePicture{
+  position : absolute ;
+  width    : 200px    ;
+  height   : auto     ;
+  top      : 18%      ;
+  right    : 12%       ;
+  border   : 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8), 0 0 20px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.Home .textTitle{
+  position  : absolute ;
+  color     : white    ;
+  top       : 110px     ;  
+  left      : 10%      ; 
+  font-size : 40px     ;
+  text-align: left     ;
+  z-index   : 0        ;
+}
+
+.Home .textExplication{
+  position  : absolute ;
+  color     : white    ;
+  top       : 210px    ;  
+  left      : 10%      ;
+  width     : 50%    ;  
+  font-size : 20px     ;
+  text-align: left    ;
+  z-index   : 0        ;
+}
+
+
+/* =====================  INFO  ===================== */
+
+
+/* BACKGROUNDS */
+
+.Info .BossWhatDoI rect{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+}
+
+.Info .WhereDoIGo rect{
+  fill    :#292929  ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+.Info .WhoDoIContact rect{
+  fill    :#7F0909  ;
+  opacity : 0.6     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+
+
+.Info .NotToForget svg .background{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+}
+
+.Info .Times svg .background{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+  z-index : -3      ;
+}
+
+.Info .Contact svg .background{
+  fill    : #7F0909 ;
+  opacity : 0.6     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+  stroke  : #7F0909 ;
+}
+
+
+
+
+
+
+
+
+
+
+/* NOT TO FORGET */
+
+.Info .BossWhatDoI{
+  position:absolute;
+  top     : 20% ;
+  left    : 7%  ;
+  z-index : 0   ;
+}
+
+
+.Info .BossWhatDoI text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : middle;
+  fill        : #F5F5F5;/*#FFC500 ;*/
+}
+
+
+.Info .NotToForget{
+  position:absolute;
+  top    : 30% ;
+  left   : 7%  ;
+  z-index: 0   ;
+}
+
+
+.Info .NotToForget svg .TitleY{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 2vw;
+  text-anchor : start;
+}
+
+
+.Info .NotToForget svg .ListingY{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.5vw;
+  fill        : #F5F5F5;/*#FFC500 ;*/
+}
+
+
+.Info .NotToForget svg .Separator{
+  stroke       : #F5F5F5 ;
+  stroke-width : 1; 
+}
+
+
+.Info .NotToForget svg .TitleN{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 2vw;
+  text-anchor : start;
+}
+
+
+.Info .NotToForget svg .ListingN{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.5vw;
+  fill        : #F5F5F5;/*#FFC500 ;*/
+}
+
+
+/* WHEREABOUTS */
+
+.Info .WhereDoIGo{
+  position:absolute;
+  top    : 20% ;
+  left   : 57% ;
+  z-index: 0   ;
+}
+
+
+.Info .WhereDoIGo text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : middle;
+  fill        : #F5F5F5;/*#FFC500 ;*/
+}
+
+
+
+
+.Info .Times{
+  position:absolute;
+  top    : 30% ;
+  left   : 57% ;
+  z-index: 0   ;
+}
+
+.Info .Times svg .Title{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.8vw;
+  text-anchor : start;
+}
+
+.Info .Times svg .Address{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.3vw;
+  text-anchor : start;
+}
+
+
+.Info .Times svg .ArrivalTitle{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.4vw;
+  text-anchor : middle;
+}
+
+.Info .Times svg .ArrivalTime{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1vw;
+  text-anchor : middle;
+}
+
+.Info .Times svg .Separator{
+  stroke       : white ;
+  stroke-width : 1; 
+}
+
+.Info .Times svg .DepartureTitle{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.4vw;
+  text-anchor : middle;
+}
+
+.Info .Times svg .DepartureTime{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1vw;
+  text-anchor : middle;
+}
+
+
+
+/* CONTACT INFO */
+
+.Info .WhoDoIContact{
+  position:absolute;
+  top     : 60% ;
+  left    : 57% ;
+  z-index : 0   ;
+}
+
+
+.Info .WhoDoIContact text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : middle;
+  fill        : #D5D5D5;/*#FFC500 ;*/
+}
+
+
+
+.Info .Contact{
+  position:absolute;
+  top     : 70% ;
+  left    : 57% ;
+  z-index : 0   ;
+}
+
+.Info .Contact svg .Title{
+  fill        : #D5D5D5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.3vw;
+  text-anchor : start;
+}
+
+.Info .Contact svg .ContactNames{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.2vw;
+  text-anchor : start;
+}
+
+.Info .Contact svg .ContactNumbers{
+  fill        : #F5F5F5;/*#FFC500 ;*/
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 1.2vw;
+  text-anchor : end;
+}
+
+
+
+/* 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++            +++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++   MOBILE   +++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++            +++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* --------- APP HEADER --------- */
+
+
+.App-logoMobile {
+  height         : 50px   ;
+  width          : 50px   ;
+  padding-top    : 5px    ;
+  padding-bottom : 10px   ;
+  float          : middle ;
+
+}
+
+
+.PersonalPageHeaderMobile {
+  background-color: black               ;
+  opacity         : 0.95                ;
+  height          : 154px               ;
+  width           : 100%                ;
+  color           : black               ;
+  float           : center              ;
+  text-align      : center              ;
+  box-shadow      : 0px 0.51px 3px grey ;
+  position        : fixed               ;
+  z-index         : 5                   ;
+}
+
+.PersonalPageHeaderMobile ul {
+  list-style-type: none   ;
+  margin         : 0      ;
+  padding        : 0      ;
+  overflow       : hidden ;
+}
+
+.PersonalPageHeaderMobile li {
+  float : left;
+  width : 100%;
+}
+
+
+
+
+.PersonalPageHeaderMobile button{
+  float              : left    ; 
+  background-color   : inherit ;
+  color              : #D5D5D5 ;
+  font-size          : 16px    ;
+  height             : 43px    ;
+  width              : 100%    ;
+  border-top         : 1px solid #5A5A5A ;
+  border-bottom      : 1px solid #5A5A5A ;
+  border-left        : 1px solid black ;
+  border-right       : 1px solid black ;
+  margin-top         : 0px     ;
+  -webkit-user-select: none    ;
+  user-select        : none    ;
+  font-family: arial ;
+
+}
+
+.PersonalPageHeaderMobile button:hover{
+  background-color: #5A5A5A ;
+  transition      : 0.6s    ;
+}
+
+.PersonalPageHeaderMobile button:focus{
+    outline: none ;
+}
+
+
+
+
+
+
+
+/* =====================  GENERAL MOBILE   ===================== */
+
+
+.BackgroundMobile img {
+    position  : fixed  ;
+    left      : -90%   ;
+    top       : 0      ;
+    width     : 100%   ;
+    height    : auto   ;
+    min-width : 1400px ;
+    z-index   : -5     ;
+}
+
+
+.teamNameMobile{
+  color     : white  ;
+  float     : middle ;
+  font-size : 0px    ;
+  text-align: middle ;
+  z-index   : 0      ;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+
+/* =====================  INTRO MOBILE  ===================== */
+
+
+.IntroMobile .react-select__container{
+  position: absolute;
+  top  : 55% ;
+  left : 10% ;
+  width: 80% ;
+}
+
+
+.IntroMobile .react-select__control{
+  background-color: rgba(7,7,7,0.6);
+  border-color:#F0F0F0;
+  border-radius:1px;
+  border-width:1px;
+}
+
+
+.IntroMobile .react-select__menu{
+  background-color: rgba(7,7,7,0.7);
+  border-color : #F0F0F0 ;
+  border-radius: 1px     ;
+  border-width : 1px     ;
+  max-height   : 400%    ;
+}
+
+.IntroMobile .react-select__menu-list{
+  color         :white ;
+  padding-top   : 0    ;
+  padding-bottom: 0    ;
+}
+
+.IntroMobile .react-select__menu-list .react-select__option--isFocused{
+  background: rgba(80,80,80,0.7) ; 
+  color     : white              ;
+}
+
+
+
+.IntroMobile .react-select__input input{
+  color: white;
+}
+
+.IntroMobile .react-select__single-value{
+  color: white;
+}
+
+
+
+
+
+.IntroMobile .ConvocTitleMobile{
+  position   : absolute ;
+  color      : white    ;
+  top        : 8%       ;  
+  left       : 0%       ;
+  width      :100%      ; 
+  text-align : center   ;
+  font-size  : 9vw      ;
+  text-anchor: start    ;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+.IntroMobile .HPLogo img{
+    position  : absolute ;
+    top       : 35%      ;
+    left      : 30%      ;
+    width     : 40%      ;
+    height    : auto     ;
+    min-width : 100px    ;
+    opacity   : 0.85     ;
+}
+
+
+/* =====================  HOME MOBILE  ===================== */
+
+
+
+.HomeMobile .ProfilePictureMobile{
+  position : absolute ;
+  width    : 50%      ;
+  height   : auto     ;
+  top      : 44%      ;
+  left     : 25%      ;
+  border   : 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8), 0 0 20px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.HomeMobile .textTitle{
+  position  : absolute ;
+  color     : white    ;
+  top       : 100%     ;  
+  left      : 10%      ; 
+  font-size : 10vw     ;
+  text-align: left     ;
+  z-index   : 0        ;
+}
+
+.HomeMobile .textExplication{
+  position  : absolute ;
+  color     : white    ;
+  top       : 120%     ;  
+  left      : 10%      ;
+  width     : 80%      ;  
+  font-size : 4vw      ;
+  text-align: left     ;
+  z-index   : 0        ;
+}
+
+
+/* =====================  INFO  ===================== */
+
+/* BACKGROUNDS */
+
+.InfoMobile .BossWhatDoI rect{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+}
+
+.InfoMobile .WhereDoIGo rect{
+  fill    :#292929  ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+.InfoMobile .WhoDoIContact rect{
+  fill    :#7F0909  ;
+  opacity : 0.6     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+}
+
+
+
+.InfoMobile .NotToForget svg .background{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+}
+
+.InfoMobile .Times svg .background{
+  fill    : #292929 ;
+  opacity : 0.5     ;
+  rx      : 3px     ;
+  ry      : 3px     ; 
+  z-index : -3      ;
+}
+
+.InfoMobile .Contact svg .background{
+  fill    : #7F0909 ;
+  opacity : 0.6     ;
+  rx      : 3px     ;
+  ry      : 3px     ;
+  z-index : -3      ;
+  stroke  : #7F0909 ;
+}
+
+
+
+
+
+
+
+
+/* NOT TO FORGET */
+
+.InfoMobile .BossWhatDoI{
+  position:absolute;
+  top     : 40% ;
+  left    : 7%  ;
+  z-index : 0   ;
+}
+
+
+.InfoMobile .BossWhatDoI text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 6vw;
+  text-anchor : middle;
+  fill        : #F5F5F5;
+}
+
+
+.InfoMobile .NotToForget{
+  position:absolute;
+  top    : 50% ;
+  left   : 7%  ;
+  z-index: 0   ;
+}
+
+
+.InfoMobile .NotToForget svg .TitleY{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 4vw;
+  text-anchor : start;
+}
+
+
+.InfoMobile .NotToForget svg .ListingY{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  fill        : #F5F5F5;
+}
+
+
+.InfoMobile .NotToForget svg .Separator{
+  stroke       : #F5F5F5 ;
+  stroke-width : 1; 
+}
+
+
+.InfoMobile .NotToForget svg .TitleN{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 4vw;
+  text-anchor : start;
+}
+
+
+.InfoMobile .NotToForget svg .ListingN{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  fill        : #F5F5F5;
+}
+
+
+
+
+/* WHEREABOUTS */
+
+.InfoMobile .WhereDoIGo{
+  position:absolute;
+  top    : 130% ;
+  left   : 7% ;
+  z-index: 0   ;
+}
+
+
+.InfoMobile .WhereDoIGo text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 6vw;
+  text-anchor : middle;
+  fill        : #F5F5F5;
+}
+
+
+
+
+.InfoMobile .Times{
+  position:absolute;
+  top    : 140% ;
+  left   : 7% ;
+  z-index: 0   ;
+}
+
+.InfoMobile .Times svg .Title{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 5vw;
+  text-anchor : start;
+}
+
+.InfoMobile .Times svg .Address{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3.8vw;
+  text-anchor : start;
+}
+
+
+.InfoMobile .Times svg .ArrivalTitle{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 5vw;
+  text-anchor : middle;
+}
+
+.InfoMobile .Times svg .ArrivalTime{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : middle;
+}
+
+.InfoMobile .Times svg .Separator{
+  stroke       : white ;
+  stroke-width : 2; 
+}
+
+.InfoMobile .Times svg .DepartureTitle{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 5vw;
+  text-anchor : middle;
+}
+
+.InfoMobile .Times svg .DepartureTime{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : middle;
+}
+
+
+
+/* CONTACT INFO */
+
+
+.InfoMobile .WhoDoIContact{
+  position:absolute;
+  top     : 175% ;
+  left    : 7% ;
+  z-index : 0   ;
+}
+
+
+.InfoMobile .WhoDoIContact text{
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 6vw;
+  text-anchor : middle;
+  fill        : #D5D5D5;
+}
+
+
+
+.InfoMobile .Contact{
+  position:absolute;
+  top     : 185% ;
+  left    : 7% ;
+  z-index : 0   ;
+}
+
+.InfoMobile .Contact svg .Title{
+  fill        : #D5D5D5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3.5vw;
+  text-anchor : start;
+}
+
+.InfoMobile .Contact svg .ContactNames{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : start;
+}
+
+.InfoMobile .Contact svg .ContactNumbers{
+  fill        : #F5F5F5;
+  font-family : 'Titillium Web', sans-serif;
+  font-size   : 3vw;
+  text-anchor : end;
+}
+
+
