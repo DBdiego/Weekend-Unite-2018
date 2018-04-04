@@ -73,7 +73,8 @@ class Home extends Component {
             const userName = this.props.location.state.username;
             const path2pic = '/home/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
             //const path2pic = './'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
-            const teamText = teamTexts[teamName];
+            const teamText = teamTexts['summaries'][teamName];
+            const teamHouse = teamTexts['houses'][teamName];
 
             componentsToRender = (
                 <div className={'Home'+this.state.deviceType}>
@@ -107,6 +108,7 @@ class Home extends Component {
                         <img src={path2pic} className = {'ProfilePicture'+this.state.deviceType} alt='' />
 
                         <p className='textTitle'> {teamName}</p>
+                        <p className='teamHouse'> {teamHouse}</p>
                         <p className='textExplication'> {teamText}</p>
                     </div>
                 </div>

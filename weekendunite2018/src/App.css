@@ -117,9 +117,9 @@ body{
 
 .Intro .react-select__container{
   position: absolute;
-  top: 50%;
-  left:30%;
-  width:40%;
+  top  : 50% ;
+  left : 30% ;
+  width: 40% ;
 }
 
 
@@ -165,26 +165,37 @@ body{
 
 
 .Intro .ConvocTitle{
-  position  : absolute ;
-  color     : white    ;
-  top       : 0%       ;  
-  left      : 0%       ;
-  width     :100%      ; 
-  text-align: center   ;
-  font-size : 74px     ;
-  text-anchor: start   ;
+  position   : absolute ;
+  color      : white    ;
+  top        : 0%       ;  
+  left       : 0%       ;
+  width      : 100%     ; 
+  text-align : center   ;
+  font-size  : 5vw      ;
+  text-anchor: start    ;
   font-family: 'Great Vibes', cursive;
 }
 
 
 .Intro .HPLogo img{
-    position  : fixed  ;
-    top       : 28%    ;
-    left      : 40%    ;
-    width     : 20%    ;
-    height    : auto   ;
-    min-width : 100px  ;
-    opacity   : 0.85   ;
+  position  : absolute ;
+  top       : 27%      ;
+  left      : 35%      ;
+  width     : 30%      ;
+  height    : auto     ;
+  min-width : 150px    ;
+  opacity   : 0.85     ;
+}
+
+.Intro .Notice{
+  position  : absolute ;
+  color     : white    ;
+  bottom    : 0%       ;  
+  left      : 0%       ;
+  width     : 100%     ; 
+  text-align: center   ;
+  font-size : 1.5vmin  ;
+  text-anchor: start   ;
 }
 
 /* =====================  HOME  ===================== */
@@ -204,9 +215,19 @@ body{
 .Home .textTitle{
   position  : absolute ;
   color     : white    ;
-  top       : 110px     ;  
+  top       : 12%      ;  
   left      : 10%      ; 
   font-size : 40px     ;
+  text-align: left     ;
+  z-index   : 0        ;
+}
+
+.Home .teamHouse{
+  position  : absolute ;
+  color     : white    ;
+  top       : 22%      ;  
+  left      : 10%      ; 
+  font-size : 1.2vw    ;
   text-align: left     ;
   z-index   : 0        ;
 }
@@ -214,11 +235,11 @@ body{
 .Home .textExplication{
   position  : absolute ;
   color     : white    ;
-  top       : 210px    ;  
+  top       : 30%      ;  
   left      : 10%      ;
-  width     : 50%    ;  
+  width     : 50%      ;  
   font-size : 20px     ;
-  text-align: left    ;
+  text-align: left     ;
   z-index   : 0        ;
 }
 
@@ -289,7 +310,7 @@ body{
 
 .Info .BossWhatDoI{
   position:absolute;
-  top     : 20% ;
+  top     : 15% ;
   left    : 7%  ;
   z-index : 0   ;
 }
@@ -305,7 +326,7 @@ body{
 
 .Info .NotToForget{
   position:absolute;
-  top    : 30% ;
+  top    : 25% ;
   left   : 7%  ;
   z-index: 0   ;
 }
@@ -351,7 +372,7 @@ body{
 
 .Info .WhereDoIGo{
   position:absolute;
-  top    : 20% ;
+  top    : 15% ;
   left   : 57% ;
   z-index: 0   ;
 }
@@ -369,7 +390,7 @@ body{
 
 .Info .Times{
   position:absolute;
-  top    : 30% ;
+  top    : 25% ;
   left   : 57% ;
   z-index: 0   ;
 }
@@ -428,7 +449,7 @@ body{
 
 .Info .WhoDoIContact{
   position:absolute;
-  top     : 60% ;
+  top     : 55% ;
   left    : 57% ;
   z-index : 0   ;
 }
@@ -445,7 +466,7 @@ body{
 
 .Info .Contact{
   position:absolute;
-  top     : 70% ;
+  top     : 65% ;
   left    : 57% ;
   z-index : 0   ;
 }
@@ -645,6 +666,16 @@ body{
   font-family: 'Great Vibes', cursive;
 }
 
+.IntroMobile .NoticeMobile{
+  position  : absolute ;
+  color     : white    ;
+  bottom    : 0%       ;  
+  left      : 0%       ;
+  width     : 100%     ; 
+  text-align: center   ;
+  font-size : 1.5vmin  ;
+  text-anchor: start   ;
+}
 
 .IntroMobile .HPLogo img{
     position  : absolute ;
@@ -685,10 +716,21 @@ body{
   z-index   : 0        ;
 }
 
+.HomeMobile .teamHouse{
+  position  : absolute ;
+  color     : white    ;
+  top       : 112%     ;  
+  left      : 10%      ; 
+  font-size : 5vw     ;
+  text-align: left     ;
+  z-index   : 0        ;
+}
+
+
 .HomeMobile .textExplication{
   position  : absolute ;
   color     : white    ;
-  top       : 120%     ;  
+  top       : 125%     ;  
   left      : 10%      ;
   width     : 80%      ;  
   font-size : 4vw      ;
@@ -824,7 +866,7 @@ body{
 
 .InfoMobile .WhereDoIGo{
   position:absolute;
-  top    : 130% ;
+  top    : 140% ;
   left   : 7% ;
   z-index: 0   ;
 }
@@ -842,7 +884,7 @@ body{
 
 .InfoMobile .Times{
   position:absolute;
-  top    : 140% ;
+  top    : 150% ;
   left   : 7% ;
   z-index: 0   ;
 }
@@ -902,7 +944,7 @@ body{
 
 .InfoMobile .WhoDoIContact{
   position:absolute;
-  top     : 175% ;
+  top     : 185% ;
   left    : 7% ;
   z-index : 0   ;
 }
@@ -919,7 +961,7 @@ body{
 
 .InfoMobile .Contact{
   position:absolute;
-  top     : 185% ;
+  top     : 195% ;
   left    : 7% ;
   z-index : 0   ;
 }

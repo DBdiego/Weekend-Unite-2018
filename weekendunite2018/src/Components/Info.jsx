@@ -120,7 +120,7 @@ class Info extends Component {
 
                     <div className='NotToForget'>
                         <svg width={ Math.round(this.state.svgsizes.notToForget[0] * this.state.screensize[0])+'px'}  
-                             height={Math.round(0.65 * this.state.screensize[1])+'px'}>
+                             height={Math.round(0.73 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 
@@ -159,9 +159,15 @@ class Info extends Component {
                                 <tspan x='10%' dy={listingSpace + '%'}>
                                 - Veste imperméable
                                 </tspan>
+                                <tspan x='10%' dy={listingSpace + '%'}>
+                                - Ton plus beau
+                                </tspan>
+                                <tspan x='12%' dy={(listingSpace - 2) + '%'}>
+                                déguisement
+                                </tspan>
                             </text>
 
-                            <line className='Separator' x1='46%' y1='15%' x2='46%' y2='80%' />
+                            <line className='Separator' x1='46%' y1='15%' x2='46%' y2='90%' />
 
                             <text className='TitleN' x='50%' y='35px'>A Oublier:</text>
 
@@ -239,7 +245,7 @@ class Info extends Component {
                             <text className='DepartureTime'>
 
                                 <tspan x='75%' y='86%'>
-                                Dimanche 22/04 à 11:00 
+                                Dimanche 22/04 à 12:00 
                                 </tspan>
                                 <tspan x='75%' dy='10%'>
                                 pour une messe
@@ -268,7 +274,7 @@ class Info extends Component {
 
                     <div className='Contact'>
                         <svg width={ Math.round(this.state.svgsizes.contacts[0] * this.state.screensize[0])+'px'}  
-                             height={Math.round(0.30 * this.state.screensize[1])+'px'}>
+                             height={Math.round(0.33 * this.state.screensize[1])+'px'}>
 
                             <rect className='background' 
                                   width='100%' 

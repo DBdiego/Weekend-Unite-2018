@@ -126,6 +126,7 @@ class Intro extends Component {
                     <img src={HPLogo} alt='' />
                 </div>
 
+                <p className={'Notice'+this.state.deviceType}> Les equipes ont été choisies au hasard. Aucune préférence n'as été prise en compte quand les équipes ont été décidées.</p>
 
                 {this.state.redirect}
 
