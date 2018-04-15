@@ -172,23 +172,7 @@
         "Victoria Dubois": "Olivier Dubois",
         "Yael Luciani": "George Weasley",
         "Zoe Dulieu": "Ginny Weasley",
-        "Zoe Fallon": "Hermione Granger",
-        "Eleonore Delforge":"Neville Londubat",
-        "Axelle Braeckman":"Harry Potter",
-        "Thomas Dasseleer":"Vincent Crabbe",
-        "Ambroise de Changy":"Ron Weasley",
-        "Augustin de Lannoy":"George Weasley",
-        "Sacha de Vinck":"Cho Chang",
-        "Jean-Nicolas de Wouters":"Drago Malefoy",
-        "Emeline Elens":"Luna Lovegood",
-        "Nicolas Kervyn":"Hermione Granger",
-        "Douglas Ollington":"Olivier Dubois",
-        "Julliette Orts":"Neville Londubat",
-        "Julie Ramelot":"Katie Bell",
-        "Charles Schmit":"Ginny Weasley",
-        "Rodolphe Van Oldeneel":"Cedric Diggory",
-        "Damien Van Oldeneel":"Fred Weasley"
-
+        "Zoe Fallon": "Hermione Granger"
     },
     "names": [
         "Joseph Verstraete",
@@ -363,24 +347,8 @@
         "Francois-Louis Hariga",
         "Alexandre Pucci",
         "Thomas Van Ravestyn",
-        "Martin Xheneumont",
-        "Eleonore Delforge",
-        "Axelle Braeckman",
-        "Thomas Dasseleer",
-        "Ambroise de Changy",
-        "Augustin de Lannoy",
-        "Sacha de Vinck",
-        "Jean-Nicolas de Wouters",
-        "Emeline Elens",
-        "Nicolas Kervyn",
-        "Douglas Ollington",
-        "Julliette Orts",
-        "Julie Ramelot",
-        "Charles Schmit",
-        "Rodolphe Van Oldeneel",
-        "Damien Van Oldeneel"
+        "Martin Xheneumont"
     ],
-
     "t2n": {
         "Angelina Johnson": [
             "Augustine de Pierpont",
@@ -410,8 +378,7 @@
             "Rosalie de Wasseige",
             "Thibault Jamar",
             "Alexis Smits",
-            "Nathan de Hults",
-            "Rodolphe Van Oldeneel"
+            "Nathan de Hults"
         ],
         "Cho Chang": [
             "Pauline Duchene",
@@ -425,8 +392,7 @@
             "Clotilde de Ryckel",
             "Sacha Descampe",
             "Tatiana Pirmez",
-            "Rose Dehay",
-            "Sacha de Vinck"
+            "Rose Dehay"
         ],
         "Drago Malefoy": [
             "Gaston Fallon",
@@ -438,8 +404,7 @@
             "Clemence Dechaux",
             "Audric Braeckman",
             "Cyprien de Bonhome",
-            "Anouck Mertens",
-            "Jean-Nicolas de Wouters"
+            "Anouck Mertens"
         ],
         "Fred Weasley": [
             "Emiline Grossen",
@@ -452,8 +417,7 @@
             "Apolline de Bonhome",
             "Adelaide Van De Vyvere",
             "Tanguy de Wouters",
-            "Antoinette de Changy",
-            "Damien Van Oldeneel"
+            "Antoinette de Changy"
         ],
         "George Weasley": [
             "Igor Hecquet",
@@ -466,8 +430,7 @@
             "Olivia de Ryckel",
             "Yael Luciani",
             "Carlos Comeliau",
-            "Rafael D'Ursel",
-            "Augustin de Lannoy"
+            "Rafael D'Ursel"
         ],
         "Ginny Weasley": [
             "Faustine D'Andigne",
@@ -481,8 +444,7 @@
             "Alix Denonne",
             "Zoe Dulieu",
             "Diego de Fauconval",
-            "Francois-Louis Hariga",
-            "Charles Schmit"
+            "Francois-Louis Hariga"
         ],
         "Harry Potter": [
             "Joseph Verstraete",
@@ -494,8 +456,7 @@
             "Louise Wyckmans",
             "Martin Capelle",
             "Antoine Van Doosselaere",
-            "Alix Henroz",
-            "Axelle Braeckman"
+            "Alix Henroz"
         ],
         "Hermione Granger": [
             "Ambroise Vandenkerckhove",
@@ -510,8 +471,7 @@
             "Lucille Anne De Molina",
             "Sarah Everarts De Velp",
             "Amelie de Changy",
-            "Charline de Wouters",
-            "Nicolas Kervyn"
+            "Charline de Wouters"
         ],
         "Katie Bell": [
             "Francois Mertens",
@@ -524,8 +484,7 @@
             "Audrey Anne De Molina",
             "Guillaume de Broux",
             "Geoffroy Van Cutsem",
-            "Charlotte Peltzer",
-            "Julie Ramelot"
+            "Charlotte Peltzer"
         ],
         "Luna Lovegood": [
             "Claricia Ruffo",
@@ -539,8 +498,7 @@
             "Margaux Denonne",
             "Isaure Della Faille",
             "Felicia de Changy",
-            "Martin Xheneumont",
-            "Emeline Elens"
+            "Martin Xheneumont"
         ],
         "Neville Londubat": [
             "Leopold Maus De Rolley",
@@ -552,9 +510,7 @@
             "Emilie Francotte",
             "Alice Martens",
             "Martin Dechaux",
-            "Coline Etienne",
-            "Eleonore Delforge",
-            "Julliette Orts"
+            "Coline Etienne"
         ],
         "Olivier Dubois": [
             "Amaury Vandenkerckhove",
@@ -567,8 +523,7 @@
             "Ombeline Verstraete",
             "Guillaume Van Der Rest",
             "Celia Meissner",
-            "Alexandre Pucci",
-            "Douglas Ollington"
+            "Alexandre Pucci"
         ],
         "Ron Weasley": [
             "Heloise Fontaine",
@@ -582,8 +537,7 @@
             "Marie De Diesbach",
             "Gudule Wyckmans",
             "Marie Henroz",
-            "Thomas Van Ravestyn",
-            "Ambroise de Changy"
+            "Thomas Van Ravestyn"
         ],
         "Vincent Crabbe": [
             "Simon Everarts De Velp",
@@ -597,8 +551,7 @@
             "Maellys de Bonhome",
             "Charlotte Martens",
             "Isidore Comeliau",
-            "Alix Orts",
-            "Thomas Dasseleer"
+            "Alix Orts"
         ]
     },
     "teams": [
