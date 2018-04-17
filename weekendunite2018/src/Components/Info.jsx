@@ -245,7 +245,7 @@ class Info extends Component {
                             <text className='DepartureTime'>
 
                                 <tspan x='75%' y='86%'>
-                                Dimanche 22/04 à 12:00 
+                                Dimanche 22/04 à 11:00 
                                 </tspan>
                                 <tspan x='75%' dy='10%'>
                                 pour une messe
