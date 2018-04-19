@@ -187,7 +187,8 @@
         "Julie Ramelot":"Katie Bell",
         "Charles Schmit":"Ginny Weasley",
         "Rodolphe Van Oldeneel":"Cedric Diggory",
-        "Damien Van Oldeneel":"Fred Weasley"
+        "Damien Van Oldeneel":"Fred Weasley",
+        "François de Diesbach":"Harry Potter"
 
     },
     "names": [
@@ -379,6 +380,7 @@
         "Charles Schmit",
         "Rodolphe Van Oldeneel",
         "Damien Van Oldeneel"
+        "François de Diesbach"
     ],
 
     "t2n": {
@@ -495,7 +497,8 @@
             "Martin Capelle",
             "Antoine Van Doosselaere",
             "Alix Henroz",
-            "Axelle Braeckman"
+            "Axelle Braeckman",
+            "François de Diesbach"
         ],
         "Hermione Granger": [
             "Ambroise Vandenkerckhove",
