@@ -12,14 +12,14 @@ class Routers extends Component{
     return(
 		<div>
 			<Switch>
-				<Route path='/intro' component={Intro} /> 
-				<Route path='/home'  component={Home}  /> 
-				<Route path='/games' component={Games} />
-				<Route path='/info'  component={Info}  />   
-				<Redirect from='/' to='/intro' />
-				<Route from='/home'  to='/home'  /> 
-				<Route from='/games' to='/games' />
-				<Route from='/info'  to='/info'  /> 
+				<Route path='/weekendunite/intro' component={Intro} /> 
+				<Route path='/weekendunite/home'  component={Home}  /> 
+				<Route path='/weekendunite/games' component={Games} />
+				<Route path='/weekendunite/info'  component={Info}  />   
+				<Redirect from='/' to='/weekendunite/intro' />
+				<Route from='/weekendunite/home'  to='/weekendunite/home'  /> 
+				<Route from='/weekendunite/games' to='/weekendunite/games' />
+				<Route from='/weekendunite/info'  to='/weekendunite/info'  /> 
 			</Switch>
 		</div>
 	  )

@@ -6,15 +6,6 @@ import logo                 from '../logo.svg'              ;
 import '../App.css';
 
 
-/*
-
-                            <li>
-                                <Link to={{pathname:'/games', state:{username:userName, team:teamName}}} >
-                                    <button type='button'>JEUX</button>        
-                                </Link>
-                            </li>
-
-*/
 class Home extends Component {
     constructor() {
         super();
@@ -83,13 +74,13 @@ class Home extends Component {
                                 <img src={logo} className = {'App-logo'+this.state.deviceType} alt='logo' />
                             </li>
                             <li>
-                                <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
+                                <Link to={{pathname:'/weekendunite/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
                                 </Link>
                             </li>
 
                             <li>
-                            <Link to={{pathname:'/info', state:{username:userName, team:teamName}}} >
+                            <Link to={{pathname:'/weekendunite/info', state:{username:userName, team:teamName}}} >
                                     <button type='button'>INFOS PRATIQUES</button>        
                                 </Link>
                             </li>
@@ -113,7 +104,7 @@ class Home extends Component {
             );
         }
         catch (e) {
-            componentsToRender =  (<Redirect to={'/intro'} />);
+            componentsToRender =  (<Redirect to={'/weekendunite/intro'} />);
         };
         return componentsToRender
 
