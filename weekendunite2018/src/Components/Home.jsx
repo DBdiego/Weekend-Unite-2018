@@ -71,7 +71,7 @@ class Home extends Component {
         try {
             const teamName = this.props.location.state.team;
             const userName = this.props.location.state.username;
-            const path2pic = '/home/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
+            const path2pic = '/weekendunite/home/'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
             //const path2pic = './'+(teamName.toLowerCase()).replace(' ','_')+'.jpg';
             const teamText = teamTexts['summaries'][teamName];
             const teamHouse = teamTexts['houses'][teamName];
@@ -84,13 +84,13 @@ class Home extends Component {
                                 <img src={logo} className = {'App-logo'+this.state.deviceType} alt='logo' />
                             </li>
                             <li>
-                                <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
+                                <Link to={{pathname:'/weekendunite/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
                                 </Link>
                             </li>
 
                             <li>
-                            <Link to={{pathname:'/info', state:{username:userName, team:teamName}}} >
+                            <Link to={{pathname:'/weekendunite/info', state:{username:userName, team:teamName}}} >
                                     <button type='button'>INFOS PRATIQUES</button>        
                                 </Link>
                             </li>
@@ -115,7 +115,7 @@ class Home extends Component {
             );
         }
         catch (e) {
-            componentsToRender =  (<Redirect to={'/intro'} />);
+            componentsToRender =  (<Redirect to={'/weekendunite/intro'} />);
         };
         return componentsToRender
 

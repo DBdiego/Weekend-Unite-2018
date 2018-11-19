@@ -84,7 +84,7 @@ class Intro extends Component {
         if (selectedOption.constructor !== Array){
             const team = database.n2t[selectedOption.label];
             this.setState({ selectedOption: selectedOption.label,
-                            redirect: <Redirect to={{pathname: '/home', 
+                            redirect: <Redirect to={{pathname: '/weekendunite/home', 
                                                      state   : {username: selectedOption.label, team:team}
                                                      }}/>
                         });

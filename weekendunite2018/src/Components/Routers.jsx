@@ -16,7 +16,7 @@ class Routers extends Component{
                 <Route path='/weekendunite/home'  component={Home}  />
                 <Route path='/weekendunite/games' component={Games} />
                 <Route path='/weekendunite/info'  component={Info}  />
-                <Redirect from='/weekendunite'    to='/weekendunite/intro' />
+                <Redirect from='/'    to='/weekendunite/intro' />
                 <Route from='/weekendunite/home'  to='/weekendunite/home'  />
                 <Route from='/weekendunite/games' to='/weekendunite/games' />
                 <Route from='/weekendunite/info'  to='/weekendunite/info'  />

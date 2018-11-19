@@ -84,13 +84,13 @@ class Info extends Component {
                                 <img src={logo} className = {'App-logo'+this.state.deviceType} alt='logo' />
                             </li>
                             <li>
-                                <Link to={{pathname:'/home', state:{username:userName, team:teamName}}} >
+                                <Link to={{pathname:'/weekendunite/home', state:{username:userName, team:teamName}}} >
                                     <button type='button'>EQUIPE</button>        
                                 </Link>
                             </li>
 
                             <li>
-                            <Link to={{pathname:'/info', state:{username:userName, team:teamName}}} >
+                            <Link to={{pathname:'/weekendunite/info', state:{username:userName, team:teamName}}} >
                                     <button type='button'>INFOS PRATIQUES</button>        
                                 </Link>
                             </li>
